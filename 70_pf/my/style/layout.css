@@ -39,13 +39,19 @@ nav section {
     height: 100px; */
 }
 
-/* nav ul {display: flex} */
-nav li {
+nav ul {display: flex}
+/* 글자사이에 점 만들어 넣기 */
+nav li:first-child::after {
+    content: "";
     display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 12px 4px;
+    background: #999;
 }
-
 header {
-    height: 200px;
+    /* height: 200px; */
     line-height: 200px;
 }
 
@@ -132,9 +138,6 @@ nav a {
 }
 
 /* bg-color */
-nav {
-    background: #eee;
-}
 
 .home-icon {
     background: #eee;
