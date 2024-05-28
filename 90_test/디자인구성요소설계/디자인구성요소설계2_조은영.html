@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRArchitects</title>
     <style>
+        body,
+        h1,
+        h2,
+        h3,
+        ul {
+            margin: 0;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
         /* bg-color */
         header,
         .s1,
@@ -13,8 +30,8 @@
         .s3 li,
         .s3 li,
         h3,
-        .s4 box1,
-        .s4 box2,
+        .box1,
+        .box2,
         footer {
             background: #ccc;
         }
@@ -97,34 +114,21 @@
         }
 
         /* 섹션4 */
-        .s4 div box1 {
+        .box1 {
             height: 240px;
+            margin-bottom: 20px;
         }
 
-        .s4 div box2 {
+        .box2 {
             height: 845px;
+            margin-bottom: 20px;
         }
 
         /* 푸터 */
         footer {
+            text-align: center;
+            line-height: 85px;
             height: 85px
-        }
-
-        body,
-        h1,
-        h2,
-        h3,
-        ul {
-            margin: 0;
-        }
-
-        ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        a {
-            text-decoration: none;
         }
 
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
@@ -228,7 +232,6 @@
             <p>Lorem ipsum dolor sit amet consectetur</p>
             <div class="box1"></div>
             <div class="box2"></div>
-
         </section>
     </main>
     <footer>Copy right 2024 BR Architects. All rights reserved.</footer>
