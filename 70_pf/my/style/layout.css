@@ -58,7 +58,7 @@ header {
 section {
     width: 940px;
     margin: 0 auto;
-    /* 마진 오토는 위드가 반드시있어야함) */
+    /* 마진 오토는 위드가 반드시있어야함 */
 }
 
 .home-card {
