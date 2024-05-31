@@ -61,6 +61,8 @@ h2 {
 .home-icon {
     width: 100px;
     height: 100px;
+    background: yellow;
+    background-repeat: 8px;
 }
 
 .home-description {
