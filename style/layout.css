@@ -62,7 +62,7 @@ h2 {
     width: 100px;
     height: 100px;
     background: yellow;
-    background-repeat: 8px;
+    border-radius: 8px;
 }
 
 .home-description {
