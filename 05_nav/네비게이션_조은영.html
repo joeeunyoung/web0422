@@ -28,11 +28,13 @@
 
         :root {
             font-size: 10px;
+           
         }
 
         body {
             font-family: "IBM Plex Sans KR", sans-serif;
             line-height: 1.5;
+
         }
 
         /* font의 위계 */
@@ -55,17 +57,20 @@
 
         header {
             display: flex;
-            justify-content: flex-end;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
+            /* justify-content: flex-end; */
+            /* align-items: flex-start; */
             /* 블록레벨요소의 가로 가운데 배치: width와 margin 같이사용 */
-            width: 1200px;
+
             margin: 0 auto;
             height: 100px;
             border: 1px solid;
+            margin-top: 40px;
         }
 
         .gnb {
-            margin-top: 20px;
+            /* margin-top: 20px; */
             background: purple;
         }
 
@@ -120,13 +125,15 @@
         /* 유형3의 추가 코드 */
 
         .gnb {
-            position: relative;
+            width: 100%;
+
         }
 
         .main {
             border: 1px solid;
-            height: 30px;
-            height: 30px;
+            height: 50px;
+            line-height: 50px;
+            position: relative;
         }
 
         .main::before {
@@ -136,15 +143,17 @@
             top: 30px;
             right: 0;
             display: block;
-            width: 1200px;
+            width: 100%;
             height: 0px;
             opacity: 0;
+            visibility: hidden;
             transition: .3s;
             background: palevioletred;
         }
 
         .main:hover::before {
             height: 150px;
+            visibility: visible;
             opacity: 1;
         }
     </style>
