@@ -6,6 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRArchitects</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        /* 네이버 폰트 */
+        /* 제목: 나눔스퀘어 네오 */
+        @font-face {
+            font-family: 'NanumSquareNeo';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2');
+        }
+        html {
+            font-size: 10px;
+        }
+        body {
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 15px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: "NanumSquareNeo", sans-serif;
+        }
+
+        h1,
+        h3 {
+            font-size: 15px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        a {
+            color: #111;
+        }
+
         body,
         h1,
         h2,
@@ -27,9 +62,8 @@
         header,
         .s1,
         .s2 li,
-        .s3 li,
-        .s3 li,
-        h3,
+        .s3 a,
+        .s3 div,
         .box1,
         .box2,
         footer {
@@ -40,8 +74,8 @@
         header {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             height: 56px;
-            line-height: 56px;
             padding: 0 36px;
         }
 
@@ -68,9 +102,14 @@
         /* 섹션1 */
         .s1 {
             height: 745px;
+            position: relative;
         }
 
         .s1 h2 {
+            position: absolute;
+            left: 50%;
+            top: 50%;     
+            transform: translate(-50%,-50%);                    
             border: none;
             margin: 0;
             text-align: center;
@@ -78,6 +117,7 @@
         }
 
         /* 섹션2 */
+
         .s2 ul {
             display: flex;
             flex-wrap: wrap;
@@ -96,24 +136,46 @@
 
         .s2 h3 {
             display: inline-block;
+            background: #000;
+            color: #fff;
             padding: 8px 24px;
         }
 
         /* 섹션3 */
         .s3 ul {
             display: flex;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
         }
 
         .s3 li {
             width: 360px;
-            height: 240px;
+            /* height: 240px; */
             margin-right: 20px;
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
         }
 
         .s3 li:nth-of-type(4) {
-            margin: 0;
+            margin-right: 0;
+        }
+
+        .s3 div {
+            height: 240px;
+            
+        }
+
+        .s3 h3 {
+            font-size: 2.4rem;
+            margin: 24px 0;
+        }
+
+        .s3 li p {
+            margin: 24px 0;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            padding: 12px;
         }
 
         /* 섹션4 */
@@ -134,38 +196,7 @@
             height: 85px
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
-        /* 네이버 폰트 */
-        /* 제목: 나눔스퀘어 네오 */
-        @font-face {
-            font-family: 'NanumSquareNeo';
-            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2');
-        }
-
-        body {
-            font-family: "Noto Sans KR", sans-serif;
-            font-size: 15px;
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-family: "NanumSquareNeo", sans-serif;
-        }
-
-        h1,
-        h3 {
-            font-size: 15px;
-        }
-
-        h2 {
-            font-size: 24px;
-        }
-
-        a {
-            color: #111;
-        }
     </style>
 </head>
 
@@ -190,27 +221,35 @@
             <ul>
                 <li>
                     <h3>Summer House</h3>
+                    <div><!-- 이미지 --></div>
                 </li>
                 <li>
                     <h3>Brick House</h3>
+                    <div><!-- 이미지 --></div>
                 </li>
                 <li>
                     <h3>Renovated</h3>
+                    <div><!-- 이미지 --></div>
                 </li>
                 <li>
                     <h3>Barn House</h3>
+                    <div><!-- 이미지 --></div>
                 </li>
                 <li>
                     <h3>Summer House</h3>
+                    <div><!-- 이미지 --></div>
                 </li>
                 <li>
                     <h3>Brick House</h3>
+                    <div><!-- 이미지 --></div>
                 </li>
                 <li>
                     <h3>Renovated</h3>
+                    <div><!-- 이미지 --></div>
                 </li>
                 <li>
                     <h3>Barn House</h3>
+                    <div><!-- 이미지 --></div>
                 </li>
             </ul>
         </section>
@@ -225,18 +264,42 @@
                 officia quas, </p>
             <ul>
                 <li>
-                        <div>John Doe</div>
-                    
+                    <div><!-- 이미지 --></div>
+                    <h3>John Doe</h3>
+                    <p>CEO & Founder</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <a href="#">Contant</a>
+
                 </li>
                 <li>
-                    <div>Jane Doe</div>
+                    <div><!-- 이미지 --></div>
+                    <h3>John Doe</h3>
+                    <p>Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <a href="#">Contant</a>
+
                 </li>
                 <li>
-                    <div>Mike Ross</div>
+                    <div><!-- 이미지 --></div>
+                    <h3>Mike Ross</h3>
+                    <p>Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <a href="#">Contant</a>
+
                 </li>
                 <li>
-                    <div>Dan Star</div>
+                    <div><!-- 이미지 --></div>
+                    <h3>Dan Star</h3>
+                    <p>Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <a href="#">Contant</a>
+
                 </li>
+
             </ul>
         </section>
         <section class="section s4">
