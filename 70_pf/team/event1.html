@@ -80,13 +80,15 @@
             margin-top: -50px;
 
         }
-
+        .s2 form {
+            justify-content: end;
+        }
         ul {
             display: flex;
             flex-wrap: wrap;
         }
         li {border: 1px solid #000;
-            border-radius: 10px;/* 사진 물어보기!!! */
+            border-radius: 10px;
             overflow: hidden;
             text-align: center;
             width: 353px;
@@ -114,6 +116,17 @@
         </div>
     </section>
     <section class="section s2">
+        <form>
+            <label for="coffee">제목</label>
+            <select name="coffee">
+              <option>커피</option>
+              <option>음료</option>
+              <option>빵</option>
+              <option>텀블러</option>
+            </select>
+          
+            <input type="search" value="검색어 입력">
+          </form>
         <ul>
             <li>
                 <div><img src="assets/bread.jpg" alt="깨찰빵"></div>
