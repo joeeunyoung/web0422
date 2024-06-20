@@ -26,21 +26,16 @@
 
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
 
-        :root {
-            font-size: 10px;
-
-        }
-
         body {
-            font-family: "IBM Plex Sans KR", sans-serif;
-            line-height: 1.5;
-
+            /* 글자 크기/줄간격(lh) 클자스타일 - 속기형 */            
+            font-size: 15px/1.6 "IBM Plex Sans KR", sans-serif;
         }
+
+
 
         /* font의 위계 */
         /* 1depth, mainmenu */
         .main>li>a {
-            font-size: 1.6rem;
             color: #fdfcfc;
         }
 
@@ -50,13 +45,11 @@
 
         /* 2depth, submenu */
         .sub li a {
-            font-size: 1.4rem;
             color: #333;
         }
 
         header {
             height: 200px;
-            font-size: 2.5rem;
         }
 
         header div {
@@ -265,10 +258,11 @@
 </head>
 
 <body>
-    <header>
-        <h1>Vallery-Festival</h1>
-    </header>
-    <section class="s1">
+    <div class="wrap">
+        <header>
+            <h1 class="logo"><a href="#">Vallery-Festival</a></h1>
+        </header>
+        <!-- 네비게이션 -->
         <nav class="gnb">
             <!-- 1depth  -->
             <ul class="main">
@@ -308,8 +302,7 @@
                 </li>
             </ul>
         </nav>
-    </section>
-    <section class="s2">
+        <!-- 슬라이드 -->
         <div class="slide">
             <ul>
                 <li><img src="images/Vallery-Festival1.jpg" alt="슬라이드 이미지1"></li>
@@ -318,8 +311,9 @@
                 <li><img src="images/Vallery-Festival1.jpg" alt="슬라이드 이미지1"></li>
             </ul>
         </div>
-    </section>
-    <footer>Copyright 2024. Vallery Festival.</footer>
+        <!-- 푸터 -->
+        <footer>Copyright 2024. Vallery Festival.</footer>
+    </div>
 </body>
 
 </html>

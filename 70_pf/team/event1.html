@@ -11,8 +11,11 @@
         @font-face {
             font-family: 'Pretendard-Regular';
             src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff');
+            font-weight: 400;          
         }
-
+        body {
+            font-family: 'Pretendard-Regular';
+        }        
         body,
         h1,
         h2,
@@ -30,9 +33,7 @@
             text-decoration: none;
         }
 
-        body {
-            margin: 0;
-        }
+
         .s2 {
             width: 1496px;
             margin: 0 auto;
@@ -45,7 +46,6 @@
             color: #ffd900;
         }
         h2 {
-            font-family: 'Pretendard-Regular';
             line-height: 120%;
             letter-spacing: 1px;
             width: 267px;
@@ -55,13 +55,20 @@
             margin-left: 43px;
         }
         p {
-            font-family: 'Pretendard-Regular';
             font-size: 18px;
             margin-bottom: 33px;
         }
         form {
-            text-align: right;
+            text-align: right;            
+            margin-top: 96px;
+            margin-right: 25px;
         }
+        select {
+            border: none; border-bottom: .5px solid ;
+        }
+        input[type=”search”] {border:none; border-bottom:1px solid;}
+        input[type=”search”]::after {background:url(assets/돋보기.png);}
+        
         img {
             width: 100%;
         }
@@ -82,9 +89,7 @@
             margin-top: -50px;
 
         }
-        .s2 form {
-            justify-content: end;
-        }
+
         ul {
             display: flex;
             flex-wrap: wrap;
@@ -121,10 +126,10 @@
         <form>
             <label for="coffee">제목</label>
             <select name="coffee">
-              <option>커피</option>
-              <option>음료</option>
-              <option>빵</option>
-              <option>텀블러</option>
+              <option value="coffee">커피</option>
+              <option value="drinks">음료</option>
+              <option value="bread">빵</option>
+              <option value="tumbler">텀블러</option>
             </select>
           
             <input type="search" value="검색어 입력">
