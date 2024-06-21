@@ -1,27 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>compose coffee</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff');
+            font-weight: 400;
+        }
+
         body {
-            margin: 0;}
-        img {width: 100%;}
+            font-family: 'Pretendard-Regular';
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        ul {
+            margin: 0;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        .s2 {
+            width: 1470px;/* 물어보기(원래는 1460) */
+            margin: 0 auto;
+        }
+
+        h1 {
+            /* letter-spacing: 4px; */ 
+            font-family: "Lexend Deca", sans-serif;
+            font-size: 96px;
+            font-weight: normal;
+            color: #ffd900;
+        }
+
+        h2 {
+            line-height: 120%;
+            letter-spacing: 1px;
+            width: 267px;
+            height: 61px;
+            margin-top: 30px;
+            margin-bottom: 14px;
+            margin-left: 43px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 33px;
+        }
+
+        form {
+            text-align: right;
+            margin-top: 96px;
+
+        }
+
+        select {
+            border: none;
+            border-bottom: .5px solid;
+        }
+
+        input[type=”search”] {
+            border: none;
+            border-bottom: .5px solid;
+        }
+
+        input[type=”search”]::after {
+            background: url(assets/돋보기.png);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        section {
+            position: relative;
+            /* 부모에게 */
+            /* display: flex; */
+            /* justify-content: center; -> margin: 0 auto; 대치됬다 */
+        }
+
+        h1 {
+
+            position: absolute;
+            /* 자식에게 부모 크기의 50% */
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            /* 글자크기의 반만큼 빼준다. */
+            margin-top: -50px;
+
+        }
+
+        .s2 ul {
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid red;
+        }
+
+        .s2 li {
+            border: 1px solid #000;
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px -10px gray;
+            text-align: center;
+            width: 353px;/* 355px로 나타남??? */
+            height: 640px;
+            overflow: hidden;
+            margin-top: 32px;
+            margin-right: 16px;
+            margin-bottom: 16px;
+        }
+
+        .s2 li:nth-of-type(4n) {
+            margin-right: 0;
+        }
+
+        .s2 .topB {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            bottom: 10px;
+            right: 20px;
+        }
+
+        .s2 .topB  a {
+            display: block;
+            height: 100%;
+            /* 텍스트 숨기기  */
+            text-indent: -9999em;
+            background: url(assets/top.png);
+        }
+
+        .more {
+            width: 175px;
+            height: 45px;
+            margin-top: 48px;
+            margin-bottom: 96px;
+            margin-left: 650px;/* 물어보기 */
+            text-indent: -9999em;            
+            background: url(assets/more.png);
+        }
+
+
     </style>
 </head>
+
 <body>
-    <img src="event.png" alt="이벤트 페이지" usemap="#workmap">
-    <map name="workmap">
-        <area shape="rect" coords="747,99,1348,144" alt="메인 페이지" href="index.html">
-        <area shape="rect" coords="825,179,925,215" alt="이벤트" href="event.html">
-        <area shape="rect" coords="1021,182,1121,218" alt="공지사항" href="notice.html">
-        <area shape="rect" coords="442,183,534,215" alt="메뉴_커피" href="menu_coffee.html">
-        <area shape="rect" coords="872,643,1045,684" alt="메뉴_브레드" href="menu_bread.html">
-        <area shape="rect" coords="1419,182,1504,214" alt="회원가입" href="signup.html">
-        <area shape="rect" coords="1219,180,1309,214" alt="로그인" href="login.html">
-        <area shape="rect" coords="629,187,716,211" alt="상품판매" href="market.html">
-    </map>
-    
+    <header>
+        
+    </header>
+    <section class="section s1">
+        <h1>Event</h1>
+        <div>
+            <img src="assets/coffee3.jpg" alt="커피사진">
+        </div>
+    </section>
+    <section class="section s2">
+        <form>
+            <label for="coffee">제목</label>
+            <select name="coffee">
+                <option value="coffee">커피</option>
+                <option value="drinks">음료</option>
+                <option value="bread">빵</option>
+                <option value="tumbler">텀블러</option>
+            </select>
+
+            <input type="search" value="검색어 입력">
+        </form>
+        <ul>
+            <li>
+                <div><img src="assets/bread.jpg" alt="깨찰빵"></div>
+                <h2>[24년 6월 신메뉴] 백종원도
+                    놀란 깨찰빵 2종 출시!</h2>
+                <p>24.06.05</p>
+            </li>
+            <li>
+                <div><img src="assets/milkcoffee.jpg" alt="밀크커피"></div>
+                <h2>[24년 6월 신메뉴] 별다방도
+                    놀란 밀크커피 출시!</h2>
+                <p>24.06.05</p>
+            </li>
+            <li>
+                <div><img src="assets/eco-bag.jpg" alt="에코백"></div>
+                <h2>[24년 6월 이벤트] 컴포즈
+                    텀블러 지참시 에코백 증정</h2>
+                <p>24.05.31</p>
+            </li>
+            <li>
+                <div><img src="assets/watermelon.jpg" alt="수박주스"></div>
+                <h2>[24년 5월 신메뉴]생수박
+                    주스 출시!</h2>
+                <p>24.05.24</p>
+            </li>
+            <li>
+                <div><img src="assets/calamansi.jpg" alt="깔라만시주스"></div>
+                <h2>[24년 5월 신메뉴]
+                    제로칼로리 깔라만시 3종..</h2>
+                <p>24.05.23</p>
+            </li>
+            <li>
+                <div><img src="assets/kimchi.jpg" alt="김치볶음밥"></div>
+                <h2>[24년 5월 신메뉴]엄마도
+                    놀란 김치볶음밥 출시!</h2>
+                <p>24.05.16</p>
+            </li>
+            <li>
+                <div><img src="assets/tumbler.jpg" alt="텀블러"></div>
+                <h2>[컴포즈커피 지구 살리기
+                    캠페인]개인 텀블러 지참...</h2>
+                <p>24.05.14</p>
+            </li>
+            <li>
+                <div><img src="assets/strawberry.jpg" alt="딸기라떼"></div>
+                <h2>[24면 5월 신메뉴]
+                    딸기라떼 벤티사이즈 출시!</h2>
+                <p>24.05.13</p>
+            </li>
+            <li>
+                <div><img src="assets/salad.jpg" alt="쌜러드"></div>
+                <h2>[24년 5월 신메뉴]샐러드
+                    5종 출시!</h2>
+                <p>24.05.09</p>
+            </li>
+            <li>
+                <div><img src="assets/oatmilk.jpg" alt="오트밀크"></div>
+                <h2>[24년 4월 신메뉴]우유
+                    베이스 전 음료 추가금액...</h2>
+                <p>24.05.07</p>
+            </li>
+            <li>
+                <div><img src="assets/tumbler1.jpg" alt="텀블러1"></div>
+                <h2>[24년 5월 이벤트]
+                    월크 쉐이크 구매시 월크...</h2>
+                <p>24.05.03</p>
+            </li>
+            <li>
+                <div><img src="assets/saltbread.jpg" alt="소금빵"></div>
+                <h2>[24년 4월 신메뉴]소금빵
+                    4종 출시!</h2>
+                <p>24.04.29</p>
+
+        </ul>
+        <div class="more">
+            <a href=”#”>더보기</a>
+        </div>
+        <div class="topB">
+            <a href="#top">toTheTop</a>
+        </div>
+    </section>
+
+
 </body>
+
 </html>
