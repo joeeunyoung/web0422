@@ -10,18 +10,20 @@
             box-sizing: border-box;
         }
 
-        body,
-        ul {
+        body,h1,p
+        ul
+         {
             margin: 0;
         }
 
         ul {
-            padding-left: 0;
+            padding: 0;
             list-style: none;
         }
 
         a {
             text-decoration: none;
+            color: #fff;
         }
 
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
@@ -31,17 +33,8 @@
             font-size: 15px/1.6 "IBM Plex Sans KR", sans-serif;
         }
 
-
-
-        /* font의 위계 */
         /* 1depth, mainmenu */
-        .main>li>a {
-            color: #fdfcfc;
-        }
 
-        .main li:hover a {
-            color: #fff;
-        }
 
         /* 2depth, submenu */
         .sub li a {
