@@ -1,1 +1,70 @@
 @charset "utf-8";
+@import url(reset.css);
+@import url(typo.css);
+
+/* 섹션1 */
+section .s1 {
+    position: relative;
+    /* 부모에게 */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+h1 {
+    position: absolute;
+    /* 자식에게 부모 크기의 50% */
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    /* 글자크기의 반만큼 빼준다. */
+    margin-top: -230px;/* 여기 이상함!!! */
+
+}
+.s1 div {
+    width: 100%;
+    margin: 0 aute;
+    overflow: hidden;
+}
+/* 섹션2 */
+.s2 {
+    width: 1236px;
+    margin: 0 auto;
+}
+
+
+form {
+    text-align: right;
+    margin-top: 96px;
+
+}
+
+select {
+    border: none;
+    border-bottom: 1px solid;
+    margin: 40px;
+}
+/* 작동을 안함!!! */
+input[type="search"] {
+    border: none;
+    border-bottom: 1px solid;
+}
+
+input[type="search"]::after {
+    background: url(assets/search.png);
+}
+.notice1 {
+    font-size: 24px;
+    letter-spacing: 6%;
+    line-height: 96px;
+}
+.notice1 li:nth-child(1) {
+    border-top: 1px solid #d9d9d9;
+}
+.notice1 li {
+    padding-left: 53px;
+    padding-right: 30px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.notice1 b {
+    font-size: 14px;
+}

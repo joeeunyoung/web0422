@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>compose coffee</title>
-    <style>
-        body {
-            margin: 0;}
-        img {width: 100%;}
-    </style>
+    <title>compose coffee: Notice</title>
+    <link rel="stylesheet" href="notice.css">
+
 </head>
+
 <body>
-    <img src="notice.png" alt="공지사항" usemap="#workmap">
-    <map name="workmap">
-        <area shape="rect" coords="747,99,1348,144" alt="메인 페이지" href="index.html">
-        <area shape="rect" coords="825,179,925,215" alt="이벤트" href="event.html">
-        <area shape="rect" coords="1021,182,1121,218" alt="공지사항" href="notice.html">
-        <area shape="rect" coords="442,183,534,215" alt="메뉴_커피" href="menu_coffee.html">
-        <area shape="rect" coords="872,643,1045,684" alt="메뉴_브레드" href="menu_bread.html">
-        <area shape="rect" coords="1419,182,1504,214" alt="회원가입" href="signup.html">
-        <area shape="rect" coords="1219,180,1309,214" alt="로그인" href="login.html">
-        <area shape="rect" coords="629,187,716,211" alt="상품판매" href="market.html">
-    </map>
+    <header></header>
+    <section class="section s1">
+        <h1>Notice</h1>
+        <div>
+            <img src="assets/coffee3.jpg" alt="커피사진">
+        </div>
+    </section>
+    <section class="section s2">
+        <form>
+            <label for="coffee">제목</label>
+            <select name="coffee">
+                <option value="coffee">커피</option>
+                <option value="drinks">음료</option>
+                <option value="bread">빵</option>
+                <option value="tumbler">텀블러</option>
+            </select>
+
+            <input type="search" value="검색어 입력">
+        </form>
+        <ul class="notice1">
+            <li><a href="#"><spen><img src="assets/images/RedCircle.svg" alt="빨강원"></spen>컴포즈 음료 열량 및 알레르기 유발 성분 안내 (2024.0501 ver)"
+                    </a><b>2024-06-01</b></li>
+            <li><a href="#"><span>
+                컴포즈 음료 열량 및 알레르기 유발 성분 안내 (2024.0501
+                        ver)"
+            </span></a><b>2024-06-01</b></li>
+        </ul>
+    </section>
 </body>
+
 </html>
