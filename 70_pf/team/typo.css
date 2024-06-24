@@ -1,0 +1,19 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+}
+h1 {
+    /* letter-spacing: 4px; */
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 96px;
+    font-weight: normal;
+    color: #ffd900;
+}

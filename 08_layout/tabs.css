@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(typo.css);
+
+
+.tabs {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 550px;
+    height: 220px;
+}
+/* 텝의 버튼 */
+.tabs label {
+    position: relative;
+    left: 32px;
+    /* 라인이 가려지게하려 1px을 낯춤 */
+    top: 1px;
+    display: inline-block;
+    /* label의 높이는 4px 글자 크기24px+8px(상하)=32px */
+    padding: 4px 24px;
+    background: #999;
+    color: #777;
+    /* <label>태그 손 모양 */
+    cursor: pointer;
+}
+
+/* .tabs 안의 하위요소인 checked(체크된) input 아래 동생 label을 선택 */
+.tabs input:checked+label {
+    z-index: 99;
+    background: #fff;
+    color: #111;
+    border: 1px solid #ccc;
+    /* 전체 다 주고 아래쪽 숨기기 */
+    border-bottom: none;
+}
+
+/* 텝의 내용(콘텐츠) */
+.tabs>div {
+    /* 안보이게 클릭하면 보이게 */
+    display: none;
+    /* position: absolute 일때 width는 콘텐츠 크기 */
+    position: absolute;
+    width: 100%;
+    /* !00%에서 공지사항(label) 높이(32px) 만큼 빼준다 (띄어쓰기 잘하기)*/
+    height: calc(100% - 32px);
+    padding: 16px 24px;
+    border: 1px solid #ccc;
+}
+
+/* 체크된 input의 아래 label 아래 div만 보이게 */
+.tabs input:checked+label+div {
+    display: block;
+}
+
+.tabs input {
+    display: none;
+
+}
+/* 공지사항 */
+.tab1 li {
+    line-height: 2.3;/* 줄간격 2배 ~ 2.5배가 적당*/
+    border-bottom: 1px dotted #ccc;
+}
+
+.tab1 li span {
+    /* 위드를 적용하면서 줄바꿈하지 않게하기 위해 인라인블럭 */
+    display: inline-block;
+    width: 422px;
+}
+/* 갤러리 */
+.tab2 ul {
+    /* 부모에게 지정 자식이 가로배치 */
+    display: flex;
+    justify-content: space-between;
+
+    line-height: .2;
+    margin-top: 8px;
+}
+.tab2 div {
+    width: 150px;
+    height: 100px;
+    background: #ccc;
+}

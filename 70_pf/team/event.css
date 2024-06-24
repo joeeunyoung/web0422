@@ -1,0 +1,127 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(typo.css);
+
+.s2 {
+    width: 1460px;
+    /* 물어보기(원래는 1460) */
+    margin: 0 auto;
+}
+
+.s4 li {
+    margin-left: 0;
+}
+
+
+
+h2 {
+    line-height: 120%;
+    letter-spacing: 1px;
+    width: 267px;
+    height: 61px;
+    margin-top: 30px;
+    margin-bottom: 14px;
+    margin-left: 43px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 33px;
+}
+
+form {
+    text-align: right;
+    margin-top: 96px;
+
+}
+
+select {
+    border: none;
+    border-bottom: 1px solid;
+}
+
+input[type="search"] {
+    border: none;
+    border-bottom: 1px solid;
+}
+
+input[type="search"]::after {
+    background: url(assets/search.png);
+}
+
+
+section .s1 {
+    position: relative;
+    /* 부모에게 */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+h1 {
+
+    position: absolute;
+    /* 자식에게 부모 크기의 50% */
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    /* 글자크기의 반만큼 빼준다. */
+    margin-top: -230px;
+
+}
+.s1 div {
+    width: 100%;
+    margin: 0 aute;
+    overflow: hidden;
+}
+
+.s2 ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.s2 li {
+    flex-shrink: 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px -10px gray;
+    text-align: center;
+    width: 353px;
+    /* 355px로 나타남??? */
+    height: 640px;
+    overflow: hidden;
+    margin-top: 32px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.s2 li:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.s2 .topB {
+    position: fixed;
+    width: 92px;
+    height: 92px;
+    bottom: 10px;
+    right: 20px;
+}
+
+.s2 .topB a {
+    display: block;
+    height: 100%;
+    /* 텍스트 숨기기  */
+    text-indent: -9999em;
+    background: url(assets/top.png);
+}
+
+.more {
+    width: 174px;
+    height: 44px;
+    margin-top: 48px;
+    margin-bottom: 96px;
+    margin-left: 650px;
+    /* 물어보기 */
+    text-indent: -9999em;
+    background: url(assets/more.png);
+}
