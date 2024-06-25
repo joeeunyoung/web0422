@@ -1,17 +1,13 @@
-@charset "utf-8";
-@import url(reset.css);
-@import url(typo.css);
-
-
+/* 헤더 영역 */
 header {
     position: relative;
 }
-/* 헤더 영역*/
-.container {
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* 블록레벨요소의 가로 가운데 배치: width와 margin 같이사용 */
+    /* 블록레벨요소의 가로 가운데 배치: width, margin */
     width: 1340px;
     height: 100px;
     margin: 0 auto;
@@ -38,20 +34,18 @@ header {
 .main>li {
     width: 160px;
     height: 30px;
-    line-height: 30px;
     text-align: center;
-
+    line-height: 30px;
 }
 
 .main>li:hover {
     background: #333;
 }
 
-/* 가상 서브바 */
+/* 서브바 */
 .main::before {
     content: "";
     position: absolute;
-    z-index: -1;
     top: 100px;
     left: 0;
     width: 100%;
@@ -68,6 +62,7 @@ header {
 
 /* 2depth */
 .sub {
+    position: relative;
     height: 0;
     overflow: hidden;
     visibility: hidden;
@@ -75,7 +70,6 @@ header {
     padding: 10px 0 20px;
     transition: .3s;
     line-height: 2;
-
 }
 
 .main:hover .sub {
@@ -85,11 +79,9 @@ header {
 }
 
 .sub li a {
-    /* 글씨에 상하좌우 여백주어서  */
     padding: 4px 16px;
 }
 
 .sub li:hover a {
     background: #111;
 }
-
