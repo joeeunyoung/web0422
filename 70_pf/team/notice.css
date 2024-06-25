@@ -44,27 +44,32 @@ select {
     margin: 40px;
 }
 /* 작동을 안함!!! */
-input[type="search"] {
+input[type="searchTXT"] {
     border: none;
     border-bottom: 1px solid;
 }
 
-input[type="search"]::after {
+input[type="searchTXT"]::after {
     background: url(assets/search.png);
 }
-.notice1 {
+.container {
     font-size: 24px;
     letter-spacing: 6%;
     line-height: 96px;
 }
-.notice1 li:nth-child(1) {
+.container li:nth-child(1) {
     border-top: 1px solid #d9d9d9;
 }
-.notice1 li {
-    padding-left: 53px;
-    padding-right: 30px;
+.container li {
     border-bottom: 1px solid #d9d9d9;
 }
-.notice1 b {
+.container .num {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 34px;
+}
+.container .date {
+
     font-size: 14px;
+    padding: 0 34px;
 }

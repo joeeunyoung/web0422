@@ -4,18 +4,21 @@
     box-sizing: border-box;
 }
 
-body,h1,h2,ul,li {
+body,h1,h2,ul,p {
     margin: 0;
 }
+body {
+    background: #fff;
+}
 
-ul li {
+ul {
     padding-left: 0;
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #666666;
 }
     /* background (흰색)꼭지정해야 한다. 아니면 투명이고 다른사람이 바꿀수있다. */
 body {
