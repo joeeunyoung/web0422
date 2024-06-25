@@ -12,13 +12,14 @@
     height: 350px;
     background: rgba(240, 68, 103, 0.5);
 }
+
 /* 메인 콘텐츠 */
 #main_contents {
     width: 1340px;
     margin: -100px auto 0;
     border: 1px solid;
 }
-/* 링크 */
+
 /* 링크 영역 */
 #link {
     height: 100px;
@@ -40,6 +41,7 @@
     background: #ccc;
     margin-right: 24px;
 }
+
 /* 배너 영역 */
 #banner {
     display: flex;
@@ -65,12 +67,13 @@
 #banner>div h2 {
     margin-bottom: 16px;
 }
-/* 텝 */
+
+/* 공지사항 및 갤러리 */
 #tab_wrap {
     height: 300px;
 }
 
-.tabs {
+#tab_wrap .tabs {
     position: relative;
     left: 50px;
     top: 30px;
@@ -78,12 +81,12 @@
     height: 220px;
 }
 
-.tabs input {
+#tab_wrap .tabs input {
     display: none;
 }
 
 /* 탭의 버튼 */
-.tabs label {
+#tab_wrap .tabs label {
     position: relative;
     left: 24px;
     top: 1px;
@@ -97,7 +100,7 @@
 }
 
 /* .tabs 안의 하위요소인 체크된 input 아래 동생 label을 선택 */
-.tabs input:checked+label {
+#tab_wrap .tabs input:checked+label {
     z-index: 99;
     background: #fff;
     color: #111;
@@ -106,7 +109,7 @@
 }
 
 /* 탭의 콘텐츠 */
-.tabs>div {
+#tab_wrap .tabs>div {
     display: none;
     /* position:absolute;이면 width는 콘텐츠 크기 */
     position: absolute;
@@ -118,33 +121,30 @@
 }
 
 /* 체크된 input의 아래 label 아래 div만 보이게한다. */
-.tabs input:checked+label+div {
+#tab_wrap .tabs input:checked+label+div {
     display: block;
 }
 
 /* 공지사항의 콘텐츠 */
-.tab1 li {
+#tab_wrap .tab1 li {
     line-height: 2.3;
     border-bottom: 1px dotted #ccc;
 }
-.tab1 li a {
+#tab_wrap .tab1 li a {
     display: inline-block;
     width: 422px;
 }
 
 /* 갤러리의 콘텐츠 */
-.tab2 ul {
+#tab_wrap .tab2 ul {
     display: flex;
     justify-content: space-between;
     line-height: 2.3;
     margin-top: 8px;
 }
-.tab2 span {
+#tab_wrap .tab2 span {
     display: block;
     width: 150px;
     height: 100px;
     background: #ccc;
 }
-
-
-
