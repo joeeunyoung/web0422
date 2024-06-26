@@ -35,7 +35,6 @@ h1 {
 form {
     text-align: right;
     margin-top: 96px;
-
 }
 
 select {
@@ -49,7 +48,7 @@ input[type="search"] {
 }
 
 input[type="search"]::after {
-    background: url(assets/search.png);
+    background: url(../assets/images/search.png);
 }
 
 h2 {
@@ -106,7 +105,7 @@ p {
     height: 100%;
     /* 텍스트 숨기기  */
     text-indent: -9999em;
-    background: url(assets/top.png);
+    background: url(../assets/images/top.png);
 }
 /* 작동을 안함!!! */
 .more {
@@ -116,5 +115,5 @@ p {
     margin-bottom: 96px;
     margin-left: 650px;
     text-indent: -9999em;
-    background: url(assets/more.png);
+    background: url(../assets/images/more.png);
 }
