@@ -10,14 +10,14 @@ section .s1 {
     /* justify-content: center; */
 }
 
-h1 {
+.s1 h1 {
     position: absolute;
     /* 자식에게 부모 크기의 50% */
     left: 50%;
     top: 50%;
     margin-left: -150px;
     /* 글자크기의 반만큼 빼준다. */
-    margin-top: -230px;/* 여기 이상함!!! */
+    margin-top: -230px;/*여기 이상함!!! */
 
 }
 .s1 div {
@@ -38,19 +38,31 @@ form {
 }
 
 select {
+    font-weight: 700;
+    width: 100px;
+    height: 45px;
+    padding: 0 10px;
     border: none;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
 }
 /* 작동을 안함!!! */
 input[type="search"] {
+    width: 300px;
+    height: 45px;
+    margin-left: 10px;
+    padding: 0 10px;
+    padding-right: 50px;
     border: none;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
 }
 
 input[type="search"]::after {
     background: url(../assets/images/search.png);
 }
 
+.s2 div:hover {
+    /* 화면이 커지도록 */
+}
 h2 {
     line-height: 120%;
     letter-spacing: 1px;
@@ -92,6 +104,17 @@ p {
     margin-right: 0;
 }
 
+/* 작동을 안함!!! */
+.more {
+    width: 174px;
+    height: 44px;
+    margin-top: 48px;
+    margin-bottom: 96px;
+    margin-left: 650px;
+    text-indent: -9999em;
+    background: url(../assets/images/more.png);
+}
+html {scroll-behavior: smooth;}
 .s2 .topB {
     position: fixed;
     width: 92px;
@@ -106,14 +129,4 @@ p {
     /* 텍스트 숨기기  */
     text-indent: -9999em;
     background: url(../assets/images/top.png);
-}
-/* 작동을 안함!!! */
-.more {
-    width: 174px;
-    height: 44px;
-    margin-top: 48px;
-    margin-bottom: 96px;
-    margin-left: 650px;
-    text-indent: -9999em;
-    background: url(../assets/images/more.png);
 }

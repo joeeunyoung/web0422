@@ -18,3 +18,15 @@ h1 {
     color: #ffd900;
 }
 
+/* typo */
+.s2 h1{
+    font-size:35px;
+}
+
+.s2 .new{
+    font-size:23px;
+}
+
+.new2 div{
+    font-size:23px;
+}

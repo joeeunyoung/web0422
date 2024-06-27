@@ -85,7 +85,7 @@ header .container {
     width: 107px;
     height: 50px;
     text-align: center;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 /* 내비게이션 */
@@ -358,36 +358,33 @@ footer {
     color: #fff;
 }
 
-.copyright {
-    font-size: 1.2rem;
-}
-
 /* 하단 로고 */
 footer .flogo {
     width: 190px;
     text-align: center;
 }
 
+/* 주소 및 저작권 */
 footer .flogo img {
     width: 107px;
     height: 50px;
 }
 
-/* 주소 및 저작권 */
-footer .add {
+footer p {
     width: 850px;
     text-align: center;
 }
-
-/* SNS */
-/* 폰트어썸 코드로 삽입하기 */
-footer .sns {
-    width: 160px;
-
+/* 주소 및 저작권 */
+footer .add {
+    width: 850px;
 }
 
+.copyright {
+    font-size: 1.2rem;
+}
+/* SNS */
+/* 폰트어썸 코드로 삽입하기 */
 footer .sns a {
-
     margin: 0 8px;
     font-size: 3rem;
 }
