@@ -2,6 +2,8 @@
 @import url(reset.css);
 @import url(typo.css);
 
+html {scroll-behavior: smooth;}
+
 /* header */
 .top {
     font-size: 15px;
@@ -92,7 +94,6 @@ header {
     font-size: 18px;
     display: flex;
     text-align: center;
-    /* border:1px solid black; */
 }
 
 .main>li {
@@ -179,7 +180,7 @@ section .s1 {
 /* 섹션2 */
 .s2 {
     /* 1460이여야함 - 왼쪽 마진40이 생김 왜?*/
-    width: 1500px;
+    width: 1460px;
     margin: 0 auto;
 }
 
@@ -197,6 +198,7 @@ select {
 }
 
 input[type="search"] {
+    color: #333;
     width: 300px;
     height: 45px;
     padding: 0 10px 0 10px;
@@ -252,15 +254,18 @@ p {
 }
 /* 손모양이 안나타남 */
 .more {
-    width: 174px;
-    height: 44px;
+    text-align: center;
     margin-top: 48px;
     margin-bottom: 96px;
-    margin-left: 650px;
+}
+.more a {
+    display: inline-block;
+    width: 174px;
+    height: 44px;
     text-indent: -9999em;
     background: url(../assets/images/more.png);
 }
-html {scroll-behavior: smooth;}
+
 .s2 .topB {
     position: fixed;
     width: 92px;

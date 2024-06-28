@@ -2,6 +2,8 @@
 @import url(reset.css);
 @import url(typo.css);
 
+html {scroll-behavior: smooth;}
+
 /* header */
 .top {
     font-size: 15px;
@@ -195,7 +197,7 @@ select {
 }
 
 input[type="search"] {
-    color: #d6d6d6;
+    color: #333;
     width: 328px;
     height: 45px;
     margin-left: 20px;
@@ -217,30 +219,40 @@ input[type="search"]::after {
     border-top: 1px solid #d9d9d9;
 }
 .container li {
-
     border-bottom: 1px solid #d9d9d9;
 }
 
 .container .num {
+    display: inline-block;
+    width: 80px;
     font-size: 13px;
     font-weight: bold;
-    padding: 0 34px;
+    padding: 0 32px;
+}
+
+.container .text {
+    display: inline-block;
+    width: 1000px;
 }
 .container .date {
     font-size: 14px;
-    padding: 0 34px;
+    padding: 0 32px;
 }
-/* 손모양이 안나타남 */
+
 .more {
+    text-align: center;
+    margin-bottom: 96px;
+    margin-top: 48px;
+}
+.more a {
+    display: inline-block;
     width: 174px;
     height: 44px;
-    margin-top: 48px;
-    margin-bottom: 96px;
-    margin-left: 500px;
     text-indent: -9999em;
     background: url(../assets/images/more.png);
 }
-html {scroll-behavior: smooth;}
+
+
 .s2 .topB {
     position: fixed;
     width: 92px;
