@@ -184,29 +184,25 @@ section .s1 {
 
 form {
     text-align: right;
-    margin-top: 96px;
+    margin: 96px 0 40px 0;
 }
 
 select {
-    font-weight: 700;
     width: 100px;
     height: 45px;
-    padding: 0 10px;
     border: none;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid #333;
 }
-/* 작동을 안함!!! */
+
 input[type="search"] {
-    width: 300px;
+    color: #d6d6d6;
+    width: 328px;
     height: 45px;
-    margin-left: 10px;
-    padding: 0 10px;
-    padding-right: 50px;
+    margin-left: 20px;
     border: none;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid #333;
 }
-
-
+/* 안나타남 */
 input[type="search"]::after {
     background: url(../assets/images/search.png);
 }
@@ -215,7 +211,7 @@ input[type="search"]::after {
 .container {
     font-size: 24px;
     letter-spacing: 6%;
-    line-height: 96px;
+    line-height: 116px;
 }
 .container li:nth-child(1) {
     border-top: 1px solid #d9d9d9;
@@ -234,14 +230,13 @@ input[type="search"]::after {
     font-size: 14px;
     padding: 0 34px;
 }
-
-/* 작동을 안함!!! */
+/* 손모양이 안나타남 */
 .more {
     width: 174px;
     height: 44px;
     margin-top: 48px;
     margin-bottom: 96px;
-    margin-left: 650px;
+    margin-left: 500px;
     text-indent: -9999em;
     background: url(../assets/images/more.png);
 }
