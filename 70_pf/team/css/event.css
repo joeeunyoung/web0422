@@ -179,7 +179,6 @@ section .s1 {
 
 /* 섹션2 */
 .s2 {
-    /* 1460이여야함 - 왼쪽 마진40이 생김 왜?*/
     width: 1460px;
     margin: 0 auto;
 }
@@ -188,7 +187,7 @@ form {
     text-align: right;
     margin-top: 96px;
 }
-/* 하다보니 글씨 사라짐 */
+
 select {
     width: 100px;
     height: 45px;
@@ -201,16 +200,26 @@ input[type="search"] {
     color: #333;
     width: 300px;
     height: 45px;
-    padding: 0 10px 0 10px;
+    padding: 0 0 0 10px;
     margin-left: 10px;
     border: none;
     border-bottom: 2px solid #333;
 }
-/* 안나타남 */
-input[type="search"]::after {
-    background: url(../assets/images/search.png);
+
+form div {
+    position: relative;
+    display: inline-block;
 }
 
+form div::after {
+    content: '';
+    position: absolute;
+    top:50%;
+    transform: translate(-100%,-50%);
+    width: 24px;
+    height: 23px;
+    background: url(../assets/images/search.png) no-repeat;
+}
 
 h2 {
     line-height: 120%;
@@ -237,7 +246,6 @@ p {
 
 .s2 li {
     flex-shrink: 0;
-    border: 1px solid #000;
     border-radius: 10px;
     box-shadow: 5px 5px 20px -10px gray;
     text-align: center;
@@ -247,6 +255,17 @@ p {
     margin-top: 32px;
     margin-right: 16px;
     margin-bottom: 16px;
+}
+.s2 li div {
+    height: 480px;
+    overflow:hidden;
+
+}
+.s2 li img {
+    transition: .3s;
+}
+.s2 li img:hover {
+    transform: scale(1.1,1.1);
 }
 
 .s2 li:nth-of-type(4n) {
@@ -260,10 +279,9 @@ p {
 }
 .more a {
     display: inline-block;
-    width: 174px;
-    height: 44px;
-    text-indent: -9999em;
-    background: url(../assets/images/more.png);
+    border: 3px solid #F0CD00;
+    width: 128px;
+    line-height: 44px;
 }
 
 .s2 .topB {

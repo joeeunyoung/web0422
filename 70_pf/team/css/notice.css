@@ -204,11 +204,21 @@ input[type="search"] {
     border: none;
     border-bottom: 1px solid #333;
 }
-/* 안나타남 */
-input[type="search"]::after {
-    background: url(../assets/images/search.png);
+
+form div {
+    position: relative;
+    display: inline-block;
 }
 
+form div::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    width: 24px;
+    height: 23px;
+    background: url(../assets/images/search.png) no-repeat;
+}
 
 .container {
     font-size: 24px;
@@ -241,17 +251,15 @@ input[type="search"]::after {
 
 .more {
     text-align: center;
-    margin-bottom: 96px;
     margin-top: 48px;
+    margin-bottom: 96px;
 }
 .more a {
     display: inline-block;
-    width: 174px;
-    height: 44px;
-    text-indent: -9999em;
-    background: url(../assets/images/more.png);
+    border: 3px solid #F0CD00;
+    width: 128px;
+    line-height: 44px;
 }
-
 
 .s2 .topB {
     position: fixed;

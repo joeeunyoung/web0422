@@ -51,16 +51,64 @@ nav ul li {
     top: 50%;
     margin-left: -110px;
     margin-top: -16px;
+    z-index: 1;
     /* 
         transform: translate(-50%,-50%); 
     */
 }
 
-#sec1 div {
+#sec1 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 슬라이드 */
+#sec1 .slide {
     width: 1496px;
-    margin: 0 auto;
-    height: 745px;
-    background: #ccc;
+    overflow: hidden;
+}
+
+#sec1 .slide ul {
+    display: flex;
+    width: 400%;
+    animation: slide 12s infinite;
+}
+
+
+/* animation */
+@keyframes slide {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    10% {
+        transform: translate(-25%, 0%);
+    }
+
+    33% {
+        transform: translate(-25%, 0%);
+    }
+
+    43% {
+        transform: translate(-50%, 0%);
+    }
+
+    66% {
+        transform: translate(-50%, 0%);
+    }
+
+    76% {
+        transform: translate(-75%, 0%);
+    }
+
+    99.99% {
+        transform: translate(-75%, 0%);
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+    }
 }
 /* 섹션 2,3,4 공통 */
 section {
