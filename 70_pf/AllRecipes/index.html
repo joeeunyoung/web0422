@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALLRecipes</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
 </head>
 
 <body>
@@ -30,14 +31,33 @@
     <!-- 섹션1 -->
     <section id="sec1">
         <h2><b>ALL</b>Recipes</h2>
-        <div class="slide">
+        <!-- <div class="slide">
             <ul>            
                 <img src="assets/kitchen1.jpg" alt="부엌1">
                 <img src="assets/kitchen2.jpg" alt="부엌2">
                 <img src="assets/kitchen3.jpg" alt="부엌3">
                 <img src="assets/kitchen1.jpg" alt="부엌1">
             </ul>
+        </div> -->
+        <div class="bxslider">
+            <div><img src="assets/kitchen1.jpg"></div>
+            <div><img src="assets/kitchen2.jpg"></div>
+            <div><img src="assets/kitchen3.jpg"></div>
         </div>
+        <!-- 제이쿼리 라이브러리 파일 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    
+        <script>
+            $('.bxslider').bxSlider({
+                mode: 'fade',/*'horizontal', 'vertical', 'fade'*/
+                auto: true,
+                autoControls: false,/*실행 중지버튼*/
+                stopAutoOnClick: true,
+                pager: false,/*작은 동그라미*/
+                slideWidth: 1920
+            });
+        </script>
     </section>
 
     <!-- 섹션2 -->
@@ -46,35 +66,35 @@
         <ul>
             <li>
                 <h3>밀페유나베</h3>
-                <div><img src="assets/밀페유나베.jfif" alt="밀페유나베"></div>
+                <div><img src="assets/Nabe.jfif" alt="밀페유나베"></div>
             </li>
             <li>
                 <h3>감자채전</h3>
-                <div><img src="assets/감자.jfif" alt="감자채전"></div>
+                <div><img src="assets/potato.jfif" alt="감자채전"></div>
             </li>
             <li>
                 <h3>닭볶음탕</h3>
-                <div><img src="assets/닭볶음탕.jfif" alt="닭볶음탕"></div>
+                <div><img src="assets/chicken.jfif" alt="닭볶음탕"></div>
             </li>
             <li>
                 <h3>마파두부</h3>
-                <div><img src="assets/마파두부.jfif" alt="마파두부"></div>
+                <div><img src="assets/mapa.jfif" alt="마파두부"></div>
             </li>
             <li>
                 <h3>스파게티</h3>
-                <div><img src="assets/스파게티.jpg" alt="스파게티"></div>
+                <div><img src="assets/pasta.jpg" alt="스파게티"></div>
             </li>
             <li>
                 <h3>잔치국수</h3>
-                <div><img src="assets/잔치국수.jpg" alt="잔치국수"></div>
+                <div><img src="assets/noodle.jpg" alt="잔치국수"></div>
             </li>
             <li>
                 <h3>카레</h3>
-                <div><img src="assets/카레.jpg" alt="카레"></div>
+                <div><img src="assets/Curry.jpg" alt="카레"></div>
             </li>
             <li>
                 <h3>짜장면</h3>
-                <div><img src="assets/짜장면.jfif" alt="짜장면"></div>
+                <div><img src="assets/jjajang.jfif" alt="짜장면"></div>
             </li>
         </ul>
     </section>
@@ -92,7 +112,7 @@
                 <a href="#">자세히 보기</a>
             </li>
             <li>
-                <div><img src="assets/텀블러.jpg" alt="텀블러"></div>
+                <div><img src="assets/tumbler.jpg" alt="텀블러"></div>
                 <h3>가장 멋진 음식 사진 Contest</h3>
                 <p>2024.07.01~2024.07.31</p>
                 <p>음식을 만들고 예쁜 데코레이션과 구도, 색상을 잘 잡아서 정말 먹음직스럽게 잘 찍으신 3분에게 텀블러 증정해 드리겠습니다.</p>
@@ -106,7 +126,7 @@
                 <a href="#">자세히 보기</a>
             </li>
             <li>
-                <div><img src="assets/불앞.jpg" alt="불앞"></div>
+                <div><img src="assets/bul.jpg" alt="불앞"></div>
                 <h3>한달간 가장 많은 요리 올리신 분</h3>
                 <p>2024.08.01~2024.08.31</p>
                 <p>요즘처럼 외식문화, 배달문화가 발달한 시기에 불 앞에서 요리 만드시느라고 얼마나 수고가 많은셨어요!!! 1등에게 200000포인트 증정</p>
@@ -127,7 +147,7 @@
             <button type="submit">메시지 전송하기</button>
         </form>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.97528702056!2d126.91507057632286!3d37.5556460247517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98dbf3abc8b9%3A0x86c28aa7b196e5b9!2z7J2067Cl7LCo7JqU66as7Jew6rWs7IaM!5e0!3m2!1sko!2skr!4v1719902943510!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.97528702056!2d126.91507057632286!3d37.5556460247517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98dbf3abc8b9%3A0x86c28aa7b196e5b9!2z7J2067Cl7LCo7JqU66as7Jew6rWs7IaM!5e0!3m2!1sko!2skr!4v1719902943510!5m2!1sko!2skr"></iframe>
         </div>
     </section>
 

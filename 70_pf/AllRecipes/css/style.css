@@ -37,7 +37,7 @@ nav ul li {
     position: absolute;
     left: 50%;
     top: 50%;
-    z-index: 1;
+    z-index: 2;
     transform: translate(-50%,-50%); 
     letter-spacing: 4px;
     font-weight: 400;
@@ -59,15 +59,15 @@ nav ul li {
     overflow: hidden;
 }
 
-#sec1 .slide ul {
+/* #sec1 .slide ul {
     display: flex;
     width: 400%;
     animation: slide 12s infinite;
-}
+}  */
 
 
 /* animation */
-@keyframes slide {
+/* @keyframes slide {
     0% {
         transform: translate(0%, 0%);
     }
@@ -99,7 +99,7 @@ nav ul li {
     100% {
         transform: translate(0%, 0%);
     }
-}
+} */
 /* 섹션1,2,3,4 공통 */
 section {
     width: 1480px;
@@ -129,7 +129,7 @@ li:not(:nth-of-type(4n)) {
 }
 
 #sec2 li {
-    width: 355px;
+    /* width: 355px; */
     height: 240px;
     margin-bottom: 20px;
 }
