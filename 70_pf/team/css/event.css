@@ -189,6 +189,7 @@ form {
 }
 
 select {
+    font-size: large;
     width: 100px;
     height: 45px;
     padding: 0 10px;
@@ -220,23 +221,6 @@ form div::after {
     height: 23px;
     background: url(../assets/images/search.png) no-repeat;
 }
-
-h2 {
-    line-height: 120%;
-    letter-spacing: 1px;
-    width: 267px;
-    height: 61px;
-    margin-top: 30px;
-    margin-bottom: 14px;
-    margin-left: 43px;
-}
-
-p {
-    font-size: 18px;
-    margin-bottom: 33px;
-}
-
-
 
 .s2 ul {
     display: flex;
@@ -271,7 +255,19 @@ p {
 .s2 li:nth-of-type(4n) {
     margin-right: 0;
 }
-/* 손모양이 안나타남 */
+
+h2 {
+    line-height: 120%;
+    letter-spacing: 1px;
+    height: 100px;
+    padding: 30px 43px 0px;
+}
+
+.s2 p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
 .more {
     text-align: center;
     margin-top: 48px;

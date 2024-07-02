@@ -190,6 +190,7 @@ form {
 }
 
 select {
+    font-size: large;
     width: 100px;
     height: 45px;
     border: none;
