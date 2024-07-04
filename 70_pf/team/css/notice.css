@@ -256,10 +256,12 @@ form div::after {
     margin-bottom: 96px;
 }
 .more a {
+    font-size: larger;
+    color: #757575;
     display: inline-block;
     border: 3px solid #F0CD00;
-    width: 128px;
-    line-height: 44px;
+    width: 170px;
+    line-height: 40px;
 }
 
 .s2 .topB {
