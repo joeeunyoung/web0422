@@ -1,6 +1,7 @@
 @charset "utf-8";
-@import url(common.css);
-
+/* @import url(common.css); */
+@import url(reset.css);
+@import url(typo.css);
 
 html {scroll-behavior: smooth;}
 
@@ -168,6 +169,7 @@ section .s1 {
     top: 50%;
     /* transform: translate(-50%,-50%);  */
     margin-left: -150px;
+
 }
 .s1 div {
     width: 100%;

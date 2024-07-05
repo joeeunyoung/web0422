@@ -10,7 +10,7 @@
 body {
     font-family: 'Pretendard-Regular';
 }
-h1 {
+.s1 h1 {
     /* letter-spacing: 4px; */
     font-family: "Lexend Deca", sans-serif;
     font-size: 96px;
