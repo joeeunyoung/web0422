@@ -1,257 +1,50 @@
 @charset "utf-8";
+
+
+/* 리셋 */
+@charset "utf-8";
+
 * {
     box-sizing: border-box;
 }
 
-body,h1,h2,ul,li,p {
-    margin: 0;
-}
-
-ul {
-    padding: 0;
-    list-style: none;
+body {
+    margin-left:0;
+    margin-top:0;
+    margin:0;
+    background: #fff;
 }
 
 a {
     text-decoration: none;
-    color: #333;
-}
-    /* background (흰색)꼭지정해야 한다. 아니면 투명이고 다른사람이 바꿀수있다. */
-body {
-    background: #fff;
 }
 
-/* reset */
-
+ul,
+h1,
+p,
+h2,
+h3,
 ul {
+    margin: 0;
+}
+
+ul, li {
     padding: 0;
     list-style-type: none;
 }
 
-.s4 li{
-    margin-left:0;
-}
-
-/* header */
-.top {
-    font-size: 15px;
-    display: flex;
-    width: 100%;
-    height: 50px;
-    background: #F0CD00;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0;
-}
-
-.top_link {
-    margin: 30px;
-}
-
-.top_link a {
-    margin-right: 30px;
-}
-
-.top_link2 {
-    padding: 0;
+.s4 li {
     margin-left: 0;
 }
 
-.top_link2 a {
-    margin-left: 30px;
-}
-
-.top_link2 :nth-of-type(5) {
-    margin-left: 15px;
-}
-
-.top_link2 :nth-of-type(6) {
-    margin-left: 5px;
-}
-
-.top_link2 :nth-of-type(7) {
-    margin-left: 5px;
-}
-
-.top_link2 :nth-of-type(8) {
-    margin-right: 30px;
-    margin-left: 5px;
-}
-
-.top a {
-    color: white
-}
-
-.top img {
-    margin-left: 5px;
+/* 로그인 */
+button {
+    border: none;
 }
 
 
-header {
-
-    margin: 0 auto;
-    width: 1100px;
-    height: 100px;
-}
-
-.tlogo {
-
-    align-items: center;
-    width: 375px;
-    margin: 0 auto;
-}
-
-.tlogo div {
-    height: 20px;
-}
-
-.gnb {
-    z-index: 9999;
-    margin-top: 20px;
-    background: white;
-    display: flex;
-    justify-content: center;
-}
-
-header {
-    margin-top: 0;
-}
-
-/* 1depth 네비게이션 메인메뉴 */
-.main {
-    font-size: 18px;
-    display: flex;
-    text-align: center;
-    /* border:1px solid black; */
-}
-
-.main>li {
-    width: 160px;
-    height: 32px;
-    text-align: center;
-    line-height: 30px;
-}
-
-.main>li:hover {
-    margin: 0 auto;
-    background: #F0CD00;
-}
-
-.main::before {
-    z-index: 9999;
-    content: "";
-    position: absolute;
-    top: 180px;
-    right: 300px;
-    left: 1px;
-    margin: 0 auto;
-    display: block;
-    width: 1900px;
-    height: 100px;
-    opacity: 0;
-    transition: 0.4s;
-    background: #fff;
-}
-
-.main:hover::before {
-    height: 150px;
-    opacity: 1;
-}
-
-.main li a {
-    color: #1a1a1a;
-}
-
-/* 2depth 네비게이션 서브메뉴 */
-.sub {
-    z-index: 9999;
-    padding-top: 20px;
-    font-size: 15px;
-    width: 100%;
-    justify-content: center;
-    position: relative;
-    opacity: 0;
-}
-
-.main:hover .sub {
-    transition: 0.3s;
-    height: 150px;
-    visibility: visible;
-    opacity: 1;
-}
-
-.sub li:hover {
-    font-weight: 700;
-    background: rgb(239, 238, 238);
-}
-
-/* footer */
-.footer {
-    width: 100%;
-    height: 253.5px;
-    position: absolute;
-    background: #212121;
-    margin-bottom: 0;
-
-}
-
-.footer_line {
-    display: flex;
-    align-items: center;
-    background: #F0CD00;
-    height: 60px;
-}
-
-.footer_line p {
-    margin-left: 320px;
-    margin-right:-290px;
-}
-
-
-.footer img{
-    margin-top:60px;
-    margin-left:320px;
-}
-
-.footer_sns img{
-    position: relative;
-    left:655px;
-    bottom:100px;
-    margin-right:5px;
-    margin-left:0;
-}
-
-.footer p {
-    display: flex;
-    position:absolute;
-    font-weight: 500;
-    line-height: 24.16px;
-    color: #989B98;
-    font-size: 14.5px;
-    left:320px;
-    top: 100px;
-}
-
-.footer_right{
-    display: flex;
-    position: relative;
-    left:1000px;
-    top:50px;
-    margin:10px;
-    color:#909090;
-    position: absolute;
-}
-
-.footer_right a{
-    color:#909090;
-}
-
-.footer_right ul li{
-    margin-right:30px;
-    margin-top:10px;
-}
-
-/* typo */
+/* 타이포 */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 @font-face {
     font-family: 'Pretendard-Regular';
@@ -259,10 +52,11 @@ header {
     font-weight: 400;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
-body{font-family: 'Pretendard-Regular';}
-
+body {
+    font-family: "Pretendard-Regular", 'Lexend Deca';
+}
+/* 헤더 */
 .s2 h1{
     font-size:35px;
 }
@@ -275,36 +69,125 @@ body{font-family: 'Pretendard-Regular';}
     font-size:23px;
 }
 
-
-.s1>h1 {
-    /* letter-spacing: 4px; */
-    font-family: "Lexend Deca", sans-serif;
-    font-size: 96px;
-    font-weight: normal;
-    color: #ffd900;
+/* 이벤트 섹션1 */
+.s2 h2 {
+    
 }
 
-/* typo */
-.s2 h1{
-    font-size:35px;
+/* 메뉴 섹션1 */
+
+.main_tt {
+    font-size: 48px;
+    color: #fff;
 }
 
-.s2 .new{
-    font-size:23px;
+.con_tt {
+    font-size: 28px;
+    font-weight: 200;
+    color: #fff;
 }
 
-.new2 div{
-    font-size:23px;
-}
-
-select {
-    font-family: 'Pretendard-Regular';
-    font-weight: 700;
+.menu_section1 ul li {
     font-size: 16px;
+    color: #fff;
+}
+/* //섹션1 */
+
+/* 메뉴 섹션2 */
+.menu_section2 h2 {
+    font-size: 44px;
+    color: #3E3A39;
 }
 
-input {
-    font-family: 'Pretendard-Regular';
-    font-size: 18px;
-    color: #d6d6d6;
+.menu_section2 .Big_menu {
+    font-size: 26px;
+    color: #757575;
+}
+.sub_menu {
+    font-size: 26px;
+    color: #757575;
+}
+.tt div>b {
+    font-size: 20px;
+    color: #3E3A39;
+}
+
+.tt div>p {
+    font-size: 16px;
+    color: #757575;
+    opacity: 80%;
+}
+
+.look a {
+    font-size: 20px;
+    color: #757575;
+}
+
+/* 로그인 페이지 */
+input,
+button,
+label {
+    font-family: "Pretendard-Regular";
+}
+
+.login_section input {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.login_section>h2 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.login_section span {
+    color: #FFD900;
+}
+
+/* 로그인 */
+.login_1>input::placeholder {
+    font-size: 14px;
+    color: #757575;
+}
+
+/* 로그인 입력 */
+.login_button span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #1D1D1D;
+}
+
+/* 자동로그인(체크박스) */
+.login_checkbox span {
+    font-size: 13px;
+    color: #000;
+}
+
+.login_look a{
+    font-size: 12px;
+    color: #757575;
+}
+
+/* 간편 로그인 */
+.login_2 span {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+
+/* 회원가입 유도 */
+.login_3>h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+.login_3 span {
+    font-weight: 600;
+    color: #FFD900;
+}
+
+.login_3 a {
+    font-size: 14px;
+    color: #1D1D1D;
 }
