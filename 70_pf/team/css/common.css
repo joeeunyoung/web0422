@@ -69,48 +69,16 @@ body {
     font-size:23px;
 }
 
-/* 이벤트 섹션1 */
-.s1 h1 {
-    /* letter-spacing: 4px; */
-    font-family: "Lexend Deca", sans-serif;
-    font-size: 96px;
-    font-weight: normal;
-    color: #ffd900;
-}
-
-.s2 h1{
-    font-size:35px;
-}
-
-.s2 .new{
-    font-size:23px;
-}
-
-.new2 div{
-    font-size:23px;
-}
-
-select {
-    font-family: 'Pretendard-Regular';
-    font-weight: 700;
-    font-size: 16px;
-}
-
-input {
-    font-family: 'Pretendard-Regular';
-    font-size: 18px;
-    color: #d6d6d6;
-}
 /* 메뉴 섹션1 */
 
 .main_tt {
     font-size: 48px;
+    font-weight: 100;
     color: #fff;
 }
 
 .con_tt {
     font-size: 28px;
-    font-weight: 200;
     color: #fff;
 }
 
@@ -122,7 +90,7 @@ input {
 
 /* 메뉴 섹션2 */
 .menu_section2 h2 {
-    font-size: 44px;
+    font-size: 40px;
     color: #3E3A39;
 }
 
