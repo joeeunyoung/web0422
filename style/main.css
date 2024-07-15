@@ -6,6 +6,7 @@
 :root {
     /* to the top 버튼을 부드럽게 스크롤 */
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 /*  navigation */
 /* 박스모델 속성, display, position */
