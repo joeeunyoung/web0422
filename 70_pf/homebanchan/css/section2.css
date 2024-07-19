@@ -6,10 +6,9 @@
 .ibx {width:1120px; margin: 0 auto;}
 
 /* 섹션2 */
-/* #s2 {padding:72px 0;} */
+#s2 {padding:72px 0;}
 #s2 .ibx h2 {
     text-align: center;
-    margin-top: 96px;
 }
 #s2 .ibx h2+p {text-align: center; margin: 24px 0 48px;}
 
@@ -32,8 +31,10 @@
 #s2 #tabs>div ul li {height: 216px;}
 #s2 #tabs>div a {display:block; width: 222px; height: 168px;}
 #s2 #tabs>div a.rank1 {width: 570px; height: 432px;}
+/* #s2 #tabs>div a.rank1::before {position: absolute; left: 0; top: 0;
+    display: block; content: "1위"; font-size: 20px; width: 60px; height: 60px; background: #1c4931; line-height: 60px;} */
 #s2 #tabs>div a.rank1+h3 {position: absolute; width:474px; height:48px; right:0; top:48px; text-wrap: nowrap;}
 
-/* 탭의 기능 핵심 */
+/* 탭의 기능 핵심 */                   
 #s2 #tabs>div {display: none;}
 #s2 #tabs>div.on {display: block;}
