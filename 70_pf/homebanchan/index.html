@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집반찬연구소</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- fullpage.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <!-- bxSlider.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <!-- user.js -->
+    <script src="js/home_fullpage.js"></script>
+    <script src="js/slider.js"></script>
+
+</head>
+
+<body>
+    <!-- https://alvarotrigo.com/fullPage/ko/ -->
+    <!-- header -->
+    <header>
+        헤더
+    </header>
+
+    <!-- nav -->
+    <!-- <ul id="home_nav">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Best</a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+    </ul> -->
+
+    <!-- section -->
+    <div id="wrap">
+        <div id="s1" class="section">
+            <div class="slideWrap">
+                <ul class="slider">
+                    <li>
+                        <img src="assets/s8.jpg" alt="슬라이드 이미지1">
+                        <p>시간을 선물하는 반찬가게</p>
+                    </li>
+                    <li>
+                        <img src="assets/s1.jpg" alt="슬라이드 이미지2">
+                        <p>가장 맛있는 반찬은<br>'오늘 만든 반찬!'</p>
+                    </li>
+                    <li>
+                        <img src="assets/s4.jpg" alt="슬라이드 이미지3">
+                        <p>언제 어디서나, 모든 순간<br>고객의 곁에서 함께 합니다.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section id="s2" class="section">
+            <div class="ibx">
+                <h2>주간 반찬 베스트</h2>
+                <p>최근 한 달 동안 고객님들이 가장 많이 구매하신 반찬입니다.</p>
+    
+                <!-- 탭 -->
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tab1">김치</a></li>
+                        <li><a href="#tab2">찬합</a></li>
+                        <li><a href="#tab3">비빔밥</a></li>
+                        <li><a href="#tab4">볶음</a></li>
+                    </ul>
+                    <div id="tab1" class="on">
+                        <ul>
+                            <li>
+                                <a href="#" class="rank1"><img src="assets/열무김치.jpg" alt="열무김치"></a>
+                                <h3 class="rank1"><a href="#">1위. 열무김치</a></h3>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/총각김치.jpg" alt="2위. 몽글젤리 복숭아 스무디"></a>
+                                <h3><a href="#">2위. 총각김치</a></h3>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/깍뚜기.jpg" alt="3위. 대파 송송 치즈 감자빵"></a>
+                                <h3><a href="#">3위. 깍뚜기</a></h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab2">
+                        <ul>
+                            <li>
+                                <a href="#" class="rank1"><img src="assets/r2.png" alt="1위. 수박주스"></a>
+                                <h3 class="rank1"><a href="#">1위. 몽글젤리 복숭아 스무디</a></h3>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/r1.jpg" alt="2위. 몽글젤리 복숭아 스무디"></a>
+                                <h3><a href="#">2위. 수박주스</a></h3>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/r3.png" alt="3위. 대파 송송 치즈 감자빵"></a>
+                                <h3><a href="#">3위. 대파 송송 치즈 감자빵</a></h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab3">
+                        <ul>
+                            <li>
+                                <a href="#" class="rank1"><img src="assets/r3.png" alt="1위. 수박주스"></a>
+                                <h3 class="rank1"><a href="#">1위. 대파 송송 치즈 감자빵</a></h3>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/r2.png" alt="2위. 몽글젤리 복숭아 스무디"></a>
+                                <h3><a href="#">2위. 몽글젤리 복숭아 스무디</a></h3>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/r1.jpg" alt="3위. 대파 송송 치즈 감자빵"></a>
+                                <h3><a href="#">3위. 수박주스</a></h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab4">
+                        <ul>
+                            <li>
+                                <a href="#" class="rank1"><img src="assets/r2.png" alt="1위. 수박주스"></a>
+                                <h3 class="rank1"><a href="#">1위. 몽글젤리 복숭아 스무디</a></h3>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/r3.png" alt="2위. 몽글젤리 복숭아 스무디"></a>
+                                <h3><a href="#">2위. 대파 송송 치즈 감자빵</a></h3>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/r1.jpg" alt="3위. 대파 송송 치즈 감자빵"></a>
+                                <h3><a href="#">3위. 수박주스</a></h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div><!-- //.ibx -->
+        </section>
+        <section id="s3" class="section">
+            <h2>준비중...</h2>
+        </section>
+        <section id="s4" class="section">
+            <div class="ibx">
+                <div class="cont">
+                    <h2>집반찬연구소 이야기</h2>
+                    <h3>HOMEBANCHAN<br> &amp; 신개념 찬합 출시</h3>
+                    <p>찬합은 집밥연구소의 시작부터 계속 꿈 꿔왔던<br>기획 상품입니다.<br>직장인을 비롯한 1~2인 가구까지 제공합니다.</p>
+                    <p>좋은 품질의 제료를, 합리적인 가격으로 제공하여<br>좋은 품질의 음료를 저념한 가격으로 만나보실 수 있습니다.</p>
+                    <div class="link">
+                        <a href="#">브랜드 소개</a>
+                        <a href="#">창업문의</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="section fp-auto-height">
+            <div>
+                <p>Copyright All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

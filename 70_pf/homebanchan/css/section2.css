@@ -6,9 +6,12 @@
 .ibx {width:1120px; margin: 0 auto;}
 
 /* 섹션2 */
-#s2 {padding:72px 0;}
-#s2>.inner>h2 {text-align: center;}
-#s2>.inner>h2+p {text-align: center; margin: 24px 0 48px;}
+/* #s2 {padding:72px 0;} */
+#s2 .ibx h2 {
+    text-align: center;
+    margin-top: 96px;
+}
+#s2 .ibx h2+p {text-align: center; margin: 24px 0 48px;}
 
 /* 탭 공통 */
 #s2 #tabs {position: relative;}
@@ -17,6 +20,10 @@
 /* 탭의 버튼 */
 #s2 #tabs>ul {position: absolute; right:0; width:474px;}
 #s2 #tabs>ul>li:not(:first-child) {margin:0 16px;}
+#s2 #tabs>ul>li:not(:first-child)::before {content:'|'; margin-right: 24px;}
+
+
+#s2 #tabs>div h3 {margin-top: 16px;}
 
 /* 탭의 콘텐츠 */
 #s2 #tabs>div ul {height:432px;}

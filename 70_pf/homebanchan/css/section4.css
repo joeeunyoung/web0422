@@ -23,28 +23,28 @@ section {
     height: 100%;
 }
 
-/* 섹션5 */
-#s5 .cont {
+/* 섹션4 */
+#s4 .cont {
     width: 560px;
 }
 
-#s5 h3 {
+#s4 h3 {
     position: relative;
     margin: 24px 0 48px 0;
 }
 
-#s5 h3::after {
+#s4 h3::after {
     content: "";
     z-index: -1;
     position: absolute; left: -20px; top: 75px;
-    width: 430px; height: 40px;
+    width: 440px; height: 40px;
     background: #0D5611;
 }
 
-#s5 p:last-of-type {
+#s4 p:last-of-type {
     margin: 24px 0;
 }
-#s5 .link a {
+#s4 .link a {
     /* 줄바꿈되지않고 패딩 적용 */
     display: inline-block;
     padding: 16px 24px;
@@ -59,10 +59,10 @@ section {
         3. translate(0px, 0px), translateX(0px), translateY(0px)
         4. skew(0deg, 0deg), skewX(0deg), skewY(0deg)
 */
-#s5 .link a:hover{
+#s4 .link a:hover{
     transform: translateY(-4px);
     background: #022e05;
 }
-#s5 .link a:first-child {
+#s4 .link a:first-child {
     margin-right: 20px;
 }
