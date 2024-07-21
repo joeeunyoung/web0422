@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집반찬연구소_푸터</title>
+    <style>
+        /* reset초기화는 상위에 있어야 한다. */
+        @import url(css/reset.css);
+        @import url(css/typo.css);
+
+        /* 푸터에 있는 높이 */
+        /* .fp-auto-height div {
+            height: 200px;
+            color: white;
+            background: #000;
+        } */
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            position: absolute;
+            width: 100%;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .footer-section h3 {
+            margin-top: 0;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- footer -->
+    <footer class="section fp-auto-height">
+
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>회사 정보</h3>
+                <p>회사 소개, 역사, 비전</p>
+            </div>
+            <div class="footer-section">
+                <h3>유용한 링크</h3>
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">서비스</a></li>
+                    <li><a href="#">지원</a></li>
+                    <li><a href="#">연락처</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>연락처 정보</h3>
+                <p>이메일: contact@example.com</p>
+                <p>전화: 123-456-7890</p>
+                <p>주소: 서울특별시 강남구</p>
+            </div>
+        </div>
+
+    </footer>
+
+</html>
