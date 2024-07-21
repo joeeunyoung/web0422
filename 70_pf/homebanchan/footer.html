@@ -17,77 +17,128 @@
             background: #000;
         } */
 
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            position: absolute;
-            width: 100%;
-        }
+/* #footer {
+    position: relative;
+    padding: 68px 80px 69px;
+    background: #2c2d2f;
+} */
 
-        .footer-container {
+footer {
             display: flex;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+            /* justify-content: space-between; */
+            height: 200px;
+            padding: 50px 80px 0 58px;
+            background: #2c2d2f;
+
         }
 
-        .footer-section {
-            flex: 1;
-            padding: 0 20px;
+        .footer-logo {
+            width: 182px;
+        }
+        .footer-logo img {
+            width: 136px;
+            height: 53px;
         }
 
-        .footer-section h3 {
-            margin-top: 0;
+        .footer-links a {
+            margin: 0 5px;
+            color: #fff;
         }
 
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
+        .footer-links img {
+            width: 28px;
+        }
+        .footer-info p:not(:first-child) {
+            display: inline
+        }
+        /* .footer-info p:not(:first-child)::before {
+            content:'|'; margin-right: 24px;
+        } */
+
+        .footer-sites {
+
+            border: 1px solid red; 
+            /* padding-left: 100px; */
+        }
+        .footer-sites a {
+            display: inline-block;
+            padding-left: 20px;
+            width: 240px;
+            height: 50px;
+            font-weight: 700;
+            line-height: 50px;
+            color: #b9b9b9;
+            background: #494949 url(assets/arr_icon.png) right 21px center no-repeat;
         }
 
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
 
-        .footer-section ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .footer-section ul li a:hover {
-            text-decoration: underline;
-        }
-    </style>
+</style>
 </head>
 
 <body>
     <!-- footer -->
     <footer class="section fp-auto-height">
-
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>회사 정보</h3>
-                <p>회사 소개, 역사, 비전</p>
+        
+        <!-- <div class="info">
+            <div class="utilBox">				
+                <div class="footUtill">
+                    <a href="/kor/util/privacy/list.do">개인정보처리방침</a>
+                    <a href="javascript:lypop_open('.emailCollect');">이메일무단수집거부</a>
+                    <a href="/kor/cs/direct/inquiry/write.do">1:1 문의</a>
+                    <a href="http://ethics.lg.co.kr/index.do" target="_blank">정도경영 신문고</a>							
+                </div>
+                <div class="footUtillD">
+                    <a href="https://www.youtube.com/channel/UCyR3G-Lcsq2yGI388SfdghQ" target="_blank" class="youtube"><img src="/common/images/footer_youtube_icon.png" alt="유튜브 바로가기"></a>						
+                    <a class="kakaoChannel" href="https://pf.kakao.com/_KsuVxb" target="_blank"><img src="/common/images/footer_kakao_icon.png" alt="카카오 채널 바로가기"></a>
+                </div>
+            </div>					
+            <div class="comInfo">
+                <p class="txt addr">07320 서울특별시 영등포구 여의대로 24, FKI 타워 5~6층</p>
+                <p class="txt">대표전화 : 02-3159-5500</p>
+                <p class="txt">팩스 : 02-3159-5700</p>
+                <p class="txt">고객상담센터 : 1644-0901</p>
             </div>
-            <div class="footer-section">
-                <h3>유용한 링크</h3>
-                <ul>
-                    <li><a href="#">홈</a></li>
-                    <li><a href="#">서비스</a></li>
-                    <li><a href="#">지원</a></li>
-                    <li><a href="#">연락처</a></li>
-                </ul>
+            <div class="copy">
+                <p class="txt">COPYRIGHT ⓒ 2019 FarmHannong. ALL RIGHTS RESERVED.</p>
             </div>
-            <div class="footer-section">
-                <h3>연락처 정보</h3>
-                <p>이메일: contact@example.com</p>
-                <p>전화: 123-456-7890</p>
-                <p>주소: 서울특별시 강남구</p>
-            </div>
+        </div> -->
+        <!-- 첫번째 영역: -->
+        <div class="footer-section footer-logo">
+            <img src="assets/footer_logo.png" alt="회사 로고" />
         </div>
 
+        <!-- 두번째 영역: 링크, 주소, 전화번호, 저작권 -->
+        <div class="footer-section footer-info">
+            <!-- 링크들 -->
+            <div class="footer-links">
+                <a href="#">개인정보처리방침</a> |
+                <a href="#">이메일무단수집거부</a> |
+                <a href="#">1:1문의</a> |
+                <a href="#">정도경영신문고</a>
+                <!-- 유투브, 카카오톡 이미지 -->
+                <a href="#"><img src="assets/footer_youtube_icon.png" alt="유투브" style="vertical-align: middle;" /></a>
+                <a href="#"><img src="assets/footer_kakao_icon.png" alt="카카오톡" style="vertical-align: middle;" /></a>
+            </div>
+            <!-- 회사 주소, 전화번호 -->
+            <div class="comInfo">
+                <p class="txt addr">07320 서울특별시 영등포구 여의대로 24, FKI 타워 5~6층</p>
+                <p class="txt">대표전화 : 02-3159-5500</p>
+                <p class="txt"> | 팩스 : 02-3159-5700</p>
+                <p class="txt"> | 고객상담센터 : 1644-0901</p>
+            </div>
+            <!-- 저작권 -->
+            <div>Copyright All rights reserved.</div>
+        </div>
+
+        <!-- 세번째 영역: 관련 사이트 열기 -->
+        <div class="footer-section footer-sites">
+            <a href="#">관련 사이트 열기</a>
+        </div>
+        
+
     </footer>
+
+
+
 
 </html>
