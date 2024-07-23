@@ -15,8 +15,6 @@
 }
 
 /* 푸터에 있는 높이 */
-/* 푸터에 있는 높이 */
-/* 왜 안되는지 모르겠음 */
 .fp-auto-height>div {
     display: flex;
     justify-content: space-between;
@@ -30,7 +28,6 @@
 .footer-logo img {
     width: 136px;
     height: 53px;
-
 }
 
 .footer-links a {
@@ -94,20 +91,18 @@ header {
     z-index: 9999;
     position: fixed;
     width: 100%;
-    /* height: 90px; */
-    /* background: #ffffff88; */
+    /* height: 100px; */
 }
 
 /* 1depth, mainmenu */
         #header .main>li>a {
             font-size: 1.8rem;
             color: #fff;
-            /* transition: .3s; */
+            transition: .3s;
         }
 
         #header .main li:hover a {
             color: gray;
-            /* text-decoration-line: underline; */
         }
 
         /* 2depth, submenu */
@@ -314,7 +309,7 @@ header {
 
 /* 섹션4 */
 #s4 {
-    background: url(../assets/가족식단1.jpg) no-repeat 960px 0;
+    background: url(../assets/가족식단.jpg) no-repeat 960px 0;
 }
 #s4 .ibx {
     display: flex;

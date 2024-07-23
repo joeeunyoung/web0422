@@ -224,7 +224,7 @@ header {
     color: gray;
 }
 
-/* .sns li:first-child:hover { background: url(assets/header_youtube.svg) no-repeat 0 0;} */
+/* #header .sns li:first-child:hover { background: url(assets/header_youtube.svg) no-repeat 0 0;} */
 #header .sns li:first-child::after {
     content: "";
     display: inline-block;
