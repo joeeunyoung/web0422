@@ -10,3 +10,7 @@ h3 { font-size: 1.6rem; font-weight: 600; }
 p {font-weight: 400;}
 span { font-size: 2rem; font-weight: 600; } 
 a { color: #1b1b1b;} 
+
+/* 서브_니베아월드_섹션1 */
+#sb_world h1 {font-size: 9.6rem; font-weight: 400;}
+#sb_world p {font-size: 2rem}

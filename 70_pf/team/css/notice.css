@@ -160,7 +160,7 @@ header {
 }
 
 /* 섹션1 */
-section .s1 {
+section.s1 {
     position: relative;
 }
 
@@ -169,8 +169,8 @@ section .s1 {
     /* 자식에게 부모 크기의 50% */
     left: 50%;
     top: 50%;
-    /* transform: translate(-50%,-50%);  */
-    margin-left: -150px;
+    transform: translate(-50%,-50%); 
+    /* margin-left: -150px; */
 }
 .s1 div {
     width: 100%;
