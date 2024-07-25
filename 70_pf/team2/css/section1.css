@@ -41,8 +41,9 @@ section.s1 {
     margin: 94px 0 21px 0;
 }
 .s2 .arrow1 {
-    align-items: center;
+    /* 가로 가운데 배치: width+margin */
     width: 23px;
     height: 84px;
+    margin: 0 auto;
 }
 

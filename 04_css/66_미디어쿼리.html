@@ -7,10 +7,10 @@
     <style>
         
         /* 모바일 우선 디자인: 작은 장치 -> 큰 장치 */
+
         /* 영역 확인 */
-        body * {
-            outline: 1px dotted lime;
-        }
+        body * {outline: 1px dotted lime;}
+
         /* 공통 */
         .bx div {
             width: 300px;
@@ -19,11 +19,11 @@
             font-size: 50px;
             margin: 16px;
         }
-            /* 폰 */
-            .bx { 
-            display: flex;
-            flex-direction: column;/* column일때 align-items: center; 좌우가운데 */
-            align-items: center;
+        /* 폰 */
+        .bx { 
+        display: flex;
+        flex-direction: column;/* column일때 align-items: center; 좌우가운데 */
+        align-items: center;
         }
 
         @media (min-width:576px) {
@@ -36,8 +36,8 @@
             }
 
         }
-            /* 데스크탑 */
         @media (min-width:992px) {
+            /* 데스크탑 */
             body {background: rgb(139, 128, 240);}
         }
     </style>
