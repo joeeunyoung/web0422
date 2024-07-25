@@ -16,7 +16,16 @@ section.s1 {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%); 
-    background: url(../assets/bg_circle.png) no-repeat 0px 0px;  
+}
+
+.bg_circle {
+    position: absolute;
+    left:50%; 
+    transform: translate(-50%); 
+    width: 500px;
+    height: 500px;
+    background: #0033a081;
+    border-radius: 50%;
 }
 
 .s1 .bg {
@@ -24,3 +33,16 @@ section.s1 {
     margin: 0 aute;
     overflow: hidden;
 }
+
+/* 섹션2 */
+.ibx {width: 1140px; margin: 0 auto;}
+.s2 .title {
+    text-align: center;
+    margin: 94px 0 21px 0;
+}
+.s2 .arrow1 {
+    align-items: center;
+    width: 23px;
+    height: 84px;
+}
+
