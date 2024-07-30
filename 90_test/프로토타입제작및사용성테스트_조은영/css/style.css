@@ -70,7 +70,7 @@
     padding-top: 20px;
 }
 
-.footer-sites a {
+.footer-sites>a {
     display: inline-block;
     padding-left: 20px;
     width: 240px;
@@ -80,6 +80,12 @@
     color: #b9b9b9;
     background: #494949 url(../images/arr_icon.png) right 21px center no-repeat;
 }
+
+.footer-sites ul {
+    display: none;
+}
+/* 여기 완성하자!!!!!!!!! */
+.footer-sites ul a:visited {display: flex;}
 
 /* 푸터 영역 오른쪽 중앙에 있는 인디케이션 숨김 */
 #fp-nav.right li:last-child {
