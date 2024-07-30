@@ -323,6 +323,7 @@ header {
 
 /* 텍스트 */
 #s1 .slideWrap p {
+    f
     z-index: 9999;
     position: absolute;
     left: 50%;
