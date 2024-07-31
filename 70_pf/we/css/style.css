@@ -23,7 +23,8 @@ ul {
 body {
     color: #333;
     background: #fff;
-    font-family: Arial, 굴림, sans-serif;
+    /* font: [굵기] [기울임] 크기 글꼴 */
+    font-family: 1.5rem Arial, 굴림, sans-serif;
 }
 
 /* 동그라미 제거 */
@@ -41,12 +42,17 @@ a {
 header {
     /* 양쪽 끝에 가로 배치 */
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 30px;
     height: 100px;
     width: 1340px;
     margin: 0 auto;
+}
+
+/* 로고 */
+.logo {
+    width: 190px;
+    height: 44px;
 }
 
 /* 네비게이션 */
@@ -81,6 +87,7 @@ nav {
 /* B영역 */
 #slide {
     height: 350px;
+    overflow: hidden;
 }
 
 /* C와 D영역 공통 */
@@ -108,5 +115,22 @@ nav {
 
 /* D영역 */
 footer {
+    display: flex;
+    /* 수직 중앙 */
+    align-items: center;
     height: 100px;
+    padding: 0 30px;
+}
+
+.flogo {
+    width: 200px;
+    height: 44px;
+}
+
+.addr {
+    width: 900px;
+}
+
+.fs {
+    width: 240px;
 }
