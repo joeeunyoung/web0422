@@ -7,6 +7,7 @@
     /* to the top 버튼을 부드럽게 스크롤 */
     scroll-behavior: smooth;
 }
+
 /*  navigation */
 /* 박스모델 속성, display, position */
 nav {
@@ -21,7 +22,10 @@ nav section {
     height: 100px; */
 }
 
-nav ul {display: flex}
+nav ul {
+    display: flex
+}
+
 /* 글자사이에 점 만들어 넣기 */
 nav li:first-child::after {
     content: "";
@@ -39,10 +43,12 @@ header {
     background: url(../assets/bg-light.png) no-repeat 50% 50%/cover fixed;
     line-height: 200px;
 }
+
 /* main */
 main {
     padding-bottom: 200px;
 }
+
 section {
     width: 940px;
     margin: 0 auto;
@@ -61,21 +67,66 @@ h2 {
 .home-icon {
     width: 100px;
     height: 100px;
-    background: yellow;
+    /* background: yellow; */
     border-radius: 8px;
     overflow: hidden;
     transition: .3s;
 }
 
-            /* box-shadow: x위치 y위치 흐림 [퍼짐] 색, x위치 y위치 흐림 [퍼짐] 색, ... */
-.home-icon:hover {box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.12), 4px 4px 7px rgba(0, 0, 0, 0.24); }
+/* box-shadow: x위치 y위치 흐림 [퍼짐] 색, x위치 y위치 흐림 [퍼짐] 색, ... */
+.home-icon:hover {
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.12), 4px 4px 7px rgba(0, 0, 0, 0.24);
+}
 
 .home-description {
     width: 790px;
 }
+
 h3 span {
     font-weight: 400;
 }
+
+/* 회전 아이콘 */
+#a-icon {
+    font: 700 20px Georgia;
+}
+/* 호버시 박스쉐도우 없애는 거 물어보기 */
+
+#rotate3d {
+    width: 100px;
+    height: 100px;
+    perspective: 800px;
+}
+
+#rotate3d:hover>div {
+    transform: rotateY(180deg);
+}
+
+#rotate3d>div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 1px #ccc;
+}
+
+#rotate3d .front {
+    background: lightcoral;
+}
+
+#rotate3d .front div {
+    transform: rotateY(180deg);
+}
+
+#rotate3d .back {
+    background: lightblue;
+    backface-visibility: hidden;
+}/* /회전 아이콘 */
 
 /* footer */
 footer {
