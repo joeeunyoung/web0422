@@ -1,60 +1,65 @@
 @charset "utf-8";
 @import url('reset.css');
-@import url('typo.css');
+@import url('common.css');
 
-html {
-    scroll-behavior: smooth;
-}
+/* 내비게이션 버튼 클릭시 부드러운 움직임 */
+html {scroll-behavior: smooth;}
 
 /* 헤더 영역 */
 header {
-    /* position: fixed;나 absolute이면 width가 콘텐츠 크기 */
+    /* position: fixed;나 absolute이면 width가 내용 크기만 지정되므로 width: 100%;을 줘야함 */
     position: fixed;
     z-index: 9999;
     width: 100%;
+    /* flex-direction: row이면 주축이 가로, 교차축이 세로 */
+    /* flex-direction: column이면 주축이 세로, 교차축이 가로 */
     display: flex;
+    /* 주축 정렬 */
     justify-content: space-between;
+    /* 교자축 정렬 */
     align-items: center;
     height:54px;
+    /* padding: 상하 좌우; */
     padding: 0 30px;
-    background: #fff;
+    /* text-shadow:x위치 y위치 흐림 색; (퍼짐X)*/
+    /* box-shadow:x위치 y위치 흐림 퍼짐 색; */
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-nav ul {
-    display: flex;
-}
-nav ul li {
-    margin-left: 40px;
-}
 
+/* 네비게이션 */
+nav ul {display: flex;}
+nav ul li:not(:first-child) {margin-left: 40px;}
+
+/* 섹션 공통 */
+section {
+    /* 블록레벨요소를 가로 가운데로 지정 */
+    width: 1480px; margin: 0 auto;
+    padding-top: 96px;
+}
 /* 섹션1 */
 #sec1 {
+    /* h2의 position:absolute:의 left,top의 기준 */
     position: relative;
+    /* 헤더의 높이(54px)만큼 메인 이미지를 아래로 내리기 위해 */
     padding-top: 54px;
 }
 
 #sec1 h2 {
+    /* h2를 화면에 정중앙(가로/세로) 배치 */
     position: absolute;
     left: 50%;
     top: 50%;
     z-index: 2;
     transform: translate(-50%,-50%); 
-    letter-spacing: 4px;
-    font-weight: 400;
-
 }
 
 #sec1 b {
-    background: #000;
-    color: #fff;
     padding: 8px 16px;
     margin-right: 16px;
 }
 
 /* 슬라이드 */
 #sec1 div {
-    width: 1480px;
-    margin: 0 auto;
     height: 745px;
     overflow: hidden;
 }
@@ -100,18 +105,13 @@ nav ul li {
         transform: translate(0%, 0%);
     }
 } */
-/* 섹션1,2,3,4 공통 */
-section {
-    width: 1480px;
-    margin: 0 auto;
-    padding-top: 96px;
-}
 /* 섹션 2,3 공통 */
 section li {
     width: 355px;
 }
-/* 4n은 제외하고 나머지 li는 20px */
-li:not(:nth-of-type(4n)) {
+
+/* 4n(4의 배수요소)은 제외하고 나머지 li는 20px */
+section li:not(:nth-of-type(4n)) {
     margin-right: 20px;
 }
 
@@ -119,12 +119,13 @@ li:not(:nth-of-type(4n)) {
 #sec2 h2 {
     border-bottom: 1px solid #ccc;
     padding-bottom: 24px;
-    /* margin-top: 72px; */
     margin-bottom: 48px;
 }
 
 #sec2 ul {
     display: flex;
+    /* flex-wrap: nowrap;(기본값) flex-wrap: wrap;줄바꿈 */
+    /* 부모의 가로크기를 벗어나면 줄바꿈 */
     flex-wrap: wrap;
 }
 
@@ -136,8 +137,6 @@ li:not(:nth-of-type(4n)) {
 
 #sec2 h3 {
     position: absolute;
-    background: #000;
-    color: #fff;
     padding: 8px 24px;
 }
 
@@ -163,11 +162,9 @@ li:not(:nth-of-type(4n)) {
 
 #sec3 div {
     height: 240px;
-    background: #ccc;
 }
 
 #sec3 h3 {
-    font-size: 2.4rem;
     margin: 24px 0;
 }
 
@@ -177,7 +174,6 @@ li:not(:nth-of-type(4n)) {
 
 #sec3 a {
     display: block;
-    background: #ccc;
     text-align: center;
     padding: 12px 0;
 }
@@ -205,13 +201,11 @@ li:not(:nth-of-type(4n)) {
 #sec4 button {
     margin: 16px 0 48px;
     padding: 12px 20px;
-    background: #000;
 }
 
 #sec4 .map {
     /* width: 1480px; */
     height: 845px;
-    background: #ccc;
 }
 
 /* 푸터 */
@@ -222,6 +216,4 @@ footer {
     /* text-align: center; */
     height: 85px;
     /* padding: 30px 0; */
-    background: #000;
-    color: #fff;
 }
