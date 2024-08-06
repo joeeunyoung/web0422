@@ -90,7 +90,7 @@ h3 span {
 #a-icon {
     font: 700 20px Georgia;
 }
-/* 호버시 박스쉐도우 없애는 거: 클래스이름을 더 정해서 지정 */
+/* 호버시 박스쉐도우 없애는 거: 클래스 추가해서 지정 */
 .home-icon.home-icon-rotate:hover {box-shadow: none;}
 
 #rotate3d {

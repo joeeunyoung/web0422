@@ -47,6 +47,7 @@ section li {
     left: 50%;
     top: 62%;
     transform: translate(-50%, -50%);
+    border: none;
 }
 
 #sec1 b {
@@ -152,7 +153,9 @@ nav {
     }
 
     section li {
-        width: 355px;
+        /* cale(숫자 - 숫자), 연산자 앞뒤는 띄어쓰기 */
+        /* 20씩 3개 60px를 빼야하니 15*3 */
+        width: calc(50% - 15px);
     }
 
     section li:not(:nth-of-type(2n)) {
@@ -170,14 +173,16 @@ nav {
 @media (min-width: 992px) {
 
     /* 섹션 공통 */
+    /* 환산 1480/1903*100=77.08% */
     section {
-        width: 1480px;
+        width: 77.77%;
+        /* width: 1480px; */
         margin: 0 auto;
     }
 
     /* 섹션1 */
     #sec1 h2 {
-        top: 50%;
+        top: 55%;
     }
 
     /* 섹션2,3 공통 */
@@ -191,8 +196,13 @@ nav {
     }
 
     /*  섹션2 */
-    #sec2 li {
+    /* #sec2 li {
         height: 240px;
+    } */
+    section li {
+        /* cale(숫자 - 숫자), 연산자 앞뒤는 띄어쓰기 */
+        /* 20씩 3개 60px를 빼야하니 15*3 */
+        width: calc(25% - 15px);
     }
 
     /* 섹션4 */
