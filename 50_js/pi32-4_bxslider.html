@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bx슬라이더 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        html {font-size: 10px;}
+        body {
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 1.5rem;
+        }
+        
+        body {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            /* 
+                rem는 :root 기준
+                em는 부모 기준
+
+                %는 일반적으로 부모 기준
+
+                100vw
+                vh, vmin, vmax - viewport(뷰포트) 기준
+            */
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        #slideWrap {
+            position: relative;
+            /* height: 450px; */
+            margin: 0 auto;
+        }
+
+        .bx-wrapper {
+            height: 100%;
+            box-shadow: none;
+            border: none;
+            margin-bottom: 0;
+        }
+
+        .bx-viewport {
+            height: 100%;
+        }
+
+        /* indicator(pagination) */
+        .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+            /* 위치 */
+            width: auto;
+            left: calc(50% - 75px);
+            transform: translateX(-50%);
+            bottom: 35%;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a:focus,
+        .bx-wrapper .bx-pager.bx-default-pager a:hover,
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            width: 30px;
+            height: 30px;
+            background: url(../assets/lottechilsung/mainRoll_indi.png);
+            border: none;
+            margin: 0 15px;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            /* a.active는 a(중앙의 3개의 a) 중에서 선택된 a태그 */
+            background: url(../assets/lottechilsung/mainRoll_indi_on.png);
+        }
+
+        /* 실행/일시정지 버튼 */
+        .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+            height: 30px;
+            bottom: 35%;
+            right: calc(50% - 77px);
+            width: auto;
+        }
+
+        /* 실행 버튼 */
+        .bx-wrapper .bx-controls-auto .bx-start {
+            width: 9px;
+            height: 11px;
+            background: url(../assets/lottechilsung/btn_play.png) 0px 0px no-repeat;
+            margin: 0 15px;
+        }
+
+        .bx-wrapper .bx-controls-auto .bx-start {
+            /* start 버튼 사라지는 현상 제거 */
+            background-position: 0px 0px;
+        }
+
+        /* 일시정지 버튼 */
+        .bx-wrapper .bx-controls-auto .bx-stop:focus,
+        .bx-wrapper .bx-controls-auto .bx-stop:hover,
+        .bx-wrapper .bx-controls-auto .bx-stop.active {
+            /* start 버튼 사라지는 현상 제거 */
+            background-position: 0px 0px;
+        }
+
+        /* 이전/다음 버튼 */
+        .bx-wrapper .bx-controls-direction a {
+            /* 크기 */
+            /* display: block; */
+            width: 40px;
+            height: 79px;
+            transform: translateY(-50%);
+            /* 기존 bx슬라이더의 여백 초기화 (기본값: -16px) */
+            margin-top: 0;
+            background: no-repeat 0 0;
+        }
+
+        /* 이전 */
+        .bx-wrapper .bx-controls-direction a.bx-prev {
+            left: 40px;
+            background-image: url(../assets/lottechilsung/white_rollBtn_prev.png);
+        }
+
+        /* 다음 */
+        .bx-wrapper .bx-controls-direction a.bx-next {
+            right: 40px;
+            background-image: url(../assets/lottechilsung/white_rollBtn_next.png);
+        }
+
+        /* 다음 버튼 호버시 사라지는 현상 초기화 */
+        .bx-wrapper .bx-next:focus,
+        .bx-wrapper .bx-next:hover {
+            background-position: 0 0;
+        }
+
+        /* 텍스트 모션 */
+        #slideWrap p {
+            position: absolute;
+            left: 50%;
+            top: 35%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            color: #fff;
+            /* p태그 안에 글자 가로 가운데 */
+            text-align: center;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script>
+        $(() => {
+            $('.slider').bxSlider({
+                auto: true,
+                stopAutoOnClick: true,
+                autoControls: true
+            });
+        }); // 로드 이벤트
+    </script>
+</head>
+
+<body>
+    <div id="slideWrap">
+        <div class="slider">
+            <div>
+                <img src="../assets/lottechilsung/202010280624033660.jpg" alt="슬라이드이미지1">
+                <p>언제 어디서나, 모든 순간<br>고객의 곁에서 함께합니다.</p>
+            </div>
+            <div>
+                <img src="../assets/lottechilsung/202010280628151570.jpg" alt="슬라이드이미지2">
+                <p>맑고 깨끗한 제품으로,<br>건강한 생태계 환경을 만듭니다.</p>
+            </div>
+            <div>
+                <img src="../assets/lottechilsung/202010280638337510.jpg" alt="슬라이드이미지3">
+                <p>끊임없는 혁신과 변화를 통해,<br>더 큰 미래를 향해 나아갑니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
