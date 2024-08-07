@@ -15,7 +15,7 @@
             font-family: "Noto Sans KR", sans-serif;
             font-size: 1.5rem;
         }
-        
+
         body {
             margin: 0;
         }
@@ -58,7 +58,7 @@
             width: auto;
             left: calc(50% - 75px);
             transform: translateX(-50%);
-            bottom: 35%;
+            bottom: 38%;
         }
 
         .bx-wrapper .bx-pager.bx-default-pager a:focus,
@@ -79,7 +79,7 @@
         /* 실행/일시정지 버튼 */
         .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
             height: 30px;
-            bottom: 35%;
+            bottom: 38.2%;
             right: calc(50% - 77px);
             width: auto;
         }
@@ -137,14 +137,23 @@
 
         /* 텍스트 모션 */
         #slideWrap p {
+            z-index: 9999;
             position: absolute;
             left: 50%;
-            top: 35%;
+            top: 45%;
             transform: translate(-50%, -50%);
             font-size: 60px;
+            font-weight: 700;
             color: #fff;
             /* p태그 안에 글자 가로 가운데 */
             text-align: center;
+            opacity: 0;
+        }
+        
+        #slideWrap p.active {
+            top:38%;
+            opacity: 1;
+            transition: .5s;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -154,8 +163,30 @@
             $('.slider').bxSlider({
                 auto: true,
                 stopAutoOnClick: true,
-                autoControls: true
+                autoControls: true,
+
+                // 사건(이벤트): 슬라이드 이미지가 바뀌면, 
+                // onSlideBefore: function(){ 코드; } -> 슬라이딩 전
+                // onSlideAfter: function(){ 코드; } -> 슬라이딩 후
+                onSlideBefore: function(){beforeMotion()},
+                onSlideAfter: function(){afterMotion()}
+                
             });
+            // 슬라이딩 전 메인타이틀이 아래에 있다가 
+            /* 
+                객체.classList.add("클래스명") -> 클래스 추가
+                객체.classList.remove("클래스명") -> 클래스 제거
+                $("#slideWrap p").addClass()
+                $("#slideWrap p").removeClass()
+             */
+            function beforeMotion(){
+                $("#slideWrap p").removeClass("active")
+            }
+            // 슬라이딩 후 메인타이틀이 위로 나타난다.
+            function afterMotion(){
+                $("#slideWrap p").addClass("active")
+            }
+            
         }); // 로드 이벤트
     </script>
 </head>
