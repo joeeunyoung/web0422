@@ -9,41 +9,46 @@ section.s1 {
     height: 500px;
     position: relative;
 }
+
 .s1 .text {
     position: absolute;
     text-align: center;
     color: #fff;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%); 
+    transform: translate(-50%, -50%);
 }
 
 .bg_circle {
     position: absolute;
-    left:50%; 
-    transform: translate(-50%); 
+    left: 50%;
+    transform: translate(-50%);
     width: 500px;
     height: 500px;
     background: #0033a081;
     border-radius: 50%;
 }
 
-.s1 .bg {
+.s1 img {
     width: 100%;
+    height: 500px;
     margin: 0 aute;
-    overflow: hidden;
 }
 
 /* 섹션2 */
-.ibx {width: 1140px; margin: 0 auto;}
+.ibx {
+    width: 1140px;
+    margin: 0 auto;
+}
+
 .s2 .title {
     text-align: center;
     margin: 94px 0 21px 0;
 }
+
 .s2 .arrow1 {
     /* 가로 가운데 배치: width+margin */
     width: 23px;
     height: 84px;
     margin: 0 auto;
 }
-
