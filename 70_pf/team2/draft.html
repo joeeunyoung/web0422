@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>니베아</title>
+    <style>
+        /* reset */
+        body {margin: 0;}
+        img {width: 100%; height: auto; vertical-align: top;}
+
+        /* phone */
+        .desktop, .tablet {display: none;}
+
+        @media (min-width: 768px) {
+            /* tablet */
+            .phone {display: none;}
+            .tablet {display: block;}
+            
+        }
+        @media (min-width: 992px) {
+            /* desktop */
+            .tablet {display: none;}
+            .desktop {display: block;}
+        }
+    </style>
+</head>
+<body>
+    <img class="desktop" src="assets/index/desktop.png" alt="desktop PC">
+    <img class="tablet" src="assets/index/tablet.png" alt="tablet PC">
+    <img class="phone" src="assets/index/phone.png" alt="phone">
+</body>
+</html>
