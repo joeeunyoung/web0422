@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* reset */
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/* slick 슬라이드 */
+.slider {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    /* 데스크탑 슬라이드 전체 크기 */
+    max-width: 1210px;
+}
+
+/* 슬라이드 아이템 */
+.slick-slide {
+    margin: 0 16px;
+    background: #fff;
+    border-radius: 15px;
+    /* 이미지 상단 영역 모서리 둥글게 보이기 */
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+}
+
+/* 설명글 */
+.slick-slide .tit {
+    padding: 8px 24px;
+}
+
+/* 이전(prev)/다음(next) 버튼 */
+.slick-prev,
+.slick-next {
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0px;
+    background: url(../assets/section5/btn-slider-arrow-white.svg);
+}
+
+.slick-prev {
+    left: calc(50% - 35vw);
+}
+
+.slick-next {
+    right: calc(50% - 35vw);
+}
+
+.slick-prev::before {
+    transform: rotate(180deg);
+}
