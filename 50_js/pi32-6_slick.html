@@ -68,11 +68,10 @@
         }
 
         .slick-prev {
-            /*  */
-            left: -120px;
+            left: min(-5vw, -120px);
         }
         .slick-next {
-            right: calc(50% - 35vw);
+            right: min(-5vw, -120px);
         }
 
         .slick-prev::before {
@@ -108,7 +107,7 @@
                             arrows: false,
                             centerMode: true,
                             centerPadding: '40px',
-                            slidesToShow: 3
+                            slidesToShow: 1
                         }
                     },
                     {
