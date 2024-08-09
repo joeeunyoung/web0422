@@ -3,7 +3,7 @@
 
 
 /* 공통 */
-html { font-size: 10px; } 
+html { scroll-behavior: smooth; font-size: 10px; } 
 body { font-family: "Noto Sans KR", sans-serif; font-size: 1.5rem; color: #1b1b1b; } 
 h2 { font-size: 4.8rem; font-weight: 600; } 
 h3 { font-size: 1.6rem; font-weight: 600; } 
@@ -13,9 +13,9 @@ a { color: #1b1b1b;}
 
 /* 서브_니베아월드 */
 #sb_world .s1 h1 {font-size: 9.6rem; font-weight: 400;}
-@media (max-width:768px) {
+/* @media (max-width:768px) {
     #sb_world .s1 h1 {font-size: 7.2rem;}
-}
+} */
 
 #sb_world .s1 p {font-size: 2rem;}
 #sb_world .s2 h2 {font-size: 4rem; font-weight: 500; color:#222;}
