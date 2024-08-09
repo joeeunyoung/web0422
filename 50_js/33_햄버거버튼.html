@@ -10,6 +10,7 @@
             position: absolute;
             /* 마우스 포인터 모양 */
             cursor: pointer;
+            border: 1px solid red;
         }
 
         .bar1,
@@ -41,26 +42,25 @@
             const collapsedMenuIcon = document.querySelector(".collapsedMenuIcon");
 
             // 이벤트 처리
-            collapsedMenuIcon.onclick = (e)=>{
+            collapsedMenuIcon.onclick = ()=>{
+                // event.currentTarget는 이벤트 함수내에서 객체 자신을 가리킨다.
                 // 함수 호출
                 btnMotion(event.currentTarget);
-                // myFunction(this);
-                // 화살표 함수 이벤트 함수 내에서 this 는 window이다.
-                // console.log(collapsedMenuIcon);
-                console.log(event.currentTarget);
-                // console.log(e.currentTarget);
-                // 익명 함수 이벤트 내에서 this는 이벤트 객체이다.
-                // console.log(this);
-            }
+            }; 
+
             // 호이스팅
             // 함수 선언(정의)
             function btnMotion(x) {
                 /* 
-                
+                    classList.add("선택자"); -> 선택자 추가
+                    classList.remove("선택자"); -> 선택자 제거
+                    classList.toggle("선택자"); -> 선택자를 추가 또는 제거
                 */
+
+                // x객체가 change가 있으면 제거, 아니면 추가
                 x.classList.toggle("change");
             }
-            // 호출
+
         });
     </script>
 </head>
