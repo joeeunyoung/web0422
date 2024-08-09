@@ -13,6 +13,6 @@
 	git push
 	
 	:: 3600초 대기
-	TIMEOUT 
+	TIMEOUT 3600
 	
 goto loop
