@@ -28,6 +28,7 @@
             height: 54px;
             padding: 0 30px;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            background: blue;
         }
 
         /* 모바일 버튼 */
@@ -62,9 +63,17 @@
 
         /*///////////////// 폰 ////////////////*/
         nav {
-            width: ;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: -65%;
+            width: 65%;
             height: 100vh;
-            background: #1f1f1f;
+            background: red;
+            transition: .3s ease-in-out;
+        }
+        nav.change {
+            right: 0;
         }
 
         #sec1 span {
@@ -90,6 +99,7 @@
     <script>
         window.addEventListener("DOMContentLoaded", () => {
             // 요소 찾기
+            const nav = document.querySelector("nav");
             const collapsedMenuIcon = document.querySelector(".collapsedMenuIcon");
 
             // 이벤트 처리
@@ -101,10 +111,12 @@
 
             // 함수 선언(정의)
             function btnMotion(x) {
-                // toggle()은 x객체가 change를 가지고 있으면 제거, 아니면 추가
+                // 햄버거 버튼: 트리플바 -> x로 바뀜 또 누르면 x ->트리블바
                 x.classList.toggle("change");
-            }
 
+                // nav 태그에 change가 추가
+                nav.classList.toggle("change")
+            }
         });
     </script>
 </head>
