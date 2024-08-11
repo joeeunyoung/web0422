@@ -323,7 +323,6 @@ header {
 
 /* 텍스트 */
 #s1 .slideWrap p {
-    f
     z-index: 9999;
     position: absolute;
     left: 50%;
@@ -420,7 +419,7 @@ header {
 
 /* 섹션4 */
 #s4 {
-    background: url(../assets/가족식단.jpg) no-repeat 960px 0;
+    background: url(../assets/allfood.jpg) no-repeat 960px 0;
 }
 
 #s4 .ibx {
