@@ -42,6 +42,7 @@ a {
 header {
     /* 양쪽 끝에 가로 배치 */
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 30px;
     height: 100px;
@@ -104,15 +105,68 @@ nav {
     height: 100px;
     background: #e31a40;
 }
+#link ul {
+    display: flex;
+    /* 
+        flex-direction: row; (기본값)
+    */
+    /* 주축 가로 배치 */
+    justify-content: space-evenly;
+    /* 교차축 세로 배치 */
+    align-items: center;
+    height: 100%;
+}
 
+#link li {
+    width: 120px;
+    height: 60px;
+}
+#link li img {
+    width: 60px;
+    height: 60px;
+    /* 인라인 요소의 수직 배치 */
+    vertical-align: middle;
+    margin-right: 8px;
+}
 #banner {
+    display: flex;
+    align-items: center;
     height: 150px;
+    padding: 0 70px;
 }
-
+#banner img {
+    width: 100px;
+    height: 80px;
+}
+#banner .txt {
+    /* 상 우 하 좌 */
+    margin: 0 160px 0 24px;
+} 
 #board {
+    display: flex;
     height: 300px;
+    padding: 20px 40px;
 }
-
+#board>div {
+    width: 600px; 
+    height: 260px;
+}
+.notice {
+    margin-right: 60px;
+}
+.gallery div {
+    display: flex;
+}
+.gallery a {
+    height: 170px;
+    margin: 10px;
+}
+.gallery img {
+    display: block;
+    width: 180px;
+    height: 140px;
+    margin-bottom: 8px;
+}
 /* D영역 */
 footer {
     display: flex;
