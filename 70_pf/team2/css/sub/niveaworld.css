@@ -11,14 +11,19 @@ section.s1 {
 }
 
 .s1 .text {
+    width: 80vh;
     position: absolute;
     text-align: center;
     color: #fff;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border: 1px solid red;
 }
 
+.text p {
+    display: none;
+}
 .bg_circle {
     position: absolute;
     left: 50%;
@@ -46,9 +51,20 @@ section.s1 {
     margin: 94px 0 21px 0;
 }
 
-.s2 .arrow1 {
+.s2 .arrow {
     /* 가로 가운데 배치: width+margin */
     width: 23px;
-    height: 84px;
     margin: 0 auto;
+}
+
+/* 768이상: 테블릿 */
+@media (min-width: 768px) {
+    .text p {
+        display: inline-block;
+    }
+}
+
+/* 992이상: 데스크탑 */
+@media (min-width: 992px) {
+
 }
