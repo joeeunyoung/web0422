@@ -56,11 +56,11 @@ iframe {
 :root {
     scroll-behavior: smooth;
     font-size: 10px;
-    --black: #000;
+    --black: #0B3B8F;
     --gray1: #111;
     --gray3: #333;
     --graya: #aaa;
-    --grayc: #ccc;
+    --grayc: #2763BA;
     --white: #fff;
 }
 
@@ -152,7 +152,7 @@ header {
 }
 
 #sec1 b {
-    background: rgba(0, 0, 0, 0.786);
+    background: rgba(0, 0, 50, 0.786);
 }
 
 #sec2 h3,
@@ -162,6 +162,7 @@ footer {
 }
 
 #sec3 a {
+    color: var(--white);
     background: var(--grayc);
 }
 
