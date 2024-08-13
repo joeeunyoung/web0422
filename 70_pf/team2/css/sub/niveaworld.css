@@ -11,14 +11,13 @@ section.s1 {
 }
 
 .s1 .text {
-    width: 80vh;
+    width: 85vh;
     position: absolute;
     text-align: center;
     color: #fff;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid red;
 }
 
 .text p {
@@ -41,7 +40,7 @@ section.s1 {
 }
 
 /* 섹션2 */
-.ibx {
+.s2 .ibx {
     width: 1140px;
     margin: 0 auto;
 }
