@@ -20,6 +20,7 @@
         } 
         .slide ul { 
             position: relative;
+            left:-300%;
             display: flex; 
             width: 400%; 
             animation: slide 9s infinite;
@@ -27,14 +28,14 @@
 
         /* animation */
         @keyframes slide { 
-            0% { left: 0; } 
-            10% { left: -100%; } 
-            33% { left: -100%; } 
-            43% { left: -200%; } 
-            66% { left: -200%; } 
-            76% { left: -300%; } 
-            99.99% { left: -300%; } 
-            100% { left:0; } 
+            0% { left: -300%; } 
+            10% { left: -200%; } 
+            33% { left: -200%; } 
+            43% { left: -100%; } 
+            66% { left: -100%; } 
+            76% { left: 0%; } 
+            99.99% { left: 0%; } 
+            100% { left:-300%; } 
         }
     </style>
 </head>
@@ -42,10 +43,10 @@
 <body>
     <div class="slide">
         <ul>
-            <li><img src="slide1.jpg" alt="슬라이드 이미지1"></li>
+            <li><img src="slide3.jpg" alt="슬라이드 이미지1"></li>
             <li><img src="slide2.jpg" alt="슬라이드 이미지2"></li>
-            <li><img src="slide3.jpg" alt="슬라이드 이미지3"></li>
-            <li><img src="slide1.jpg" alt="슬라이드 이미지1"></li>
+            <li><img src="slide1.jpg" alt="슬라이드 이미지3"></li>
+            <li><img src="slide3.jpg" alt="슬라이드 이미지1"></li>
         </ul>
     </div>
 </body>
